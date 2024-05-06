@@ -1,0 +1,9 @@
+{"rule":"GENERAL_NUMBER_AGREEMENT_ERRORS","sentence":"^\\QPara definirmos os objetivos que o ativo deve alcançar, são adotadas as definições de dinheiro, economia, capital e crédito da Escola Austríaca de Economia, com referência nos autores Ludwig von Mises, Böm Bawerk, Carl Menger, Friedrich Hayek e Murray Rothbard.\\E$"}
+{"rule":"BARBARISMS","sentence":"^\\QBitcoin.\\E$"}
+{"rule":"BARBARISMS","sentence":"^\\QBlockchain.\\E$"}
+{"rule":"GENERAL_GENDER_AGREEMENT_ERRORS","sentence":"^\\QFonte: Os autores Fonte: os autores\\E$"}
+{"rule":"PT_WORDINESS_REPLACE","sentence":"^\\QUma vez que o lastro em metal na moeda foi abandonado o maior impeditivo a impressão deliberada de dinheiro, e posteriormente inflação, foi deixado de lado.\\E$"}
+{"rule":"HUNSPELL_RULE","sentence":"^\\QFriedrich Hayek, em \"Preços e Produção\" (1931), e Murray Rothbard, em \"America's Great Depression\" (1963), discutem extensivamente o papel do crédito e dos bancos na formação de ciclos econômicos.\\E$"}
+{"rule":"PT_BARBARISMS_REPLACE","sentence":"^\\QHayek salienta que distorções nos preços e na produção são frequentemente o resultado de manipulações no crédito por parte dos bancos centrais, o que leva a investimentos errôneos e a ciclos de boom e recessão.\\E$"}
+{"rule":"HUNSPELL_RULE","sentence":"^\\QRothbard, por sua vez, enfatiza que \"a expansão do crédito bancário, muitas vezes incentivada por políticas governamentais, é a precursora de uma recessão econômica\" (Rothbard, 1963).\\E$"}
+{"rule":"PT_CLICHE_REPLACE","sentence":"^\\QRothbard, por sua vez, enfatiza que \"a expansão do crédito bancário, muitas vezes incentivada por políticas governamentais, é a precursora de uma recessão econômica\" (Rothbard, 1963).\\E$"}
