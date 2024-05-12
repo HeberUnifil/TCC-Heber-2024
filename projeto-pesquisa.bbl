@@ -5,4 +5,46 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{v-1.9.7 }
 
+\bibitem[Böhm-Bawerk 1922]{von1922capital}
+\abntrefinfo{Böhm-Bawerk}{BöHM-BAWERK}{1922}
+{BöHM-BAWERK, E. von. \emph{Capital and interest: A critical history of
+  economical theory}. [S.l.]: Brentano, 1922.}
+
+\bibitem[Hayek 2017]{hayek2017desestatizaccao}
+\abntrefinfo{Hayek}{HAYEK}{2017}
+{HAYEK, F.~A. \emph{Desestatiza{\c{c}}{\~a}o do dinheiro}. [S.l.]: LVM Editora,
+  2017.}
+
+\bibitem[Menger 2017]{menger2017liberalismo}
+\abntrefinfo{Menger}{MENGER}{2017}
+{MENGER, C. \emph{LIBERALISMO-Carl Menger: Princípios de Economia Polí tica}.
+  [S.l.]: LeBooks Editora, 2017.}
+
+\bibitem[Mises 2013]{von2013theory}
+\abntrefinfo{Mises}{MISES}{2013}
+{MISES, L. V. \emph{The theory of money and credit}. [S.l.]: Skyhorse
+  Publishing, Inc., 2013.}
+
+\bibitem[Mises 2023]{von2023accao}
+\abntrefinfo{Mises}{MISES}{2023}
+{MISES, L. V. \emph{A ação humana}. [S.l.]: LVM Editora, 2023.}
+
+\bibitem[Nakamoto 2009]{Nakamoto2009}
+\abntrefinfo{Nakamoto}{NAKAMOTO}{2009}
+{NAKAMOTO, S. Bitcoin: A peer-to-peer electronic cash system.
+maio 2009.
+Dispon{\'\i}vel em: \url{http://www.bitcoin.org/bitcoin.pdf}.}
+
+\bibitem[Rothbard 2022]{rothbard2022governo}
+\abntrefinfo{Rothbard}{ROTHBARD}{2022}
+{ROTHBARD, M.~N. \emph{O que o Governo Fez com o Nosso Dinheiro?} [S.l.]: LVM
+  Editora, 2022.}
+
+\bibitem[Ulrich 2014]{Ulrich2014}
+\abntrefinfo{Ulrich}{ULRICH}{2014}
+{ULRICH, F. Bitcoin-a moeda na era digital.
+\emph{Mises Brasil}, v.~2, p.~239, 2014.
+Dispon{\'\i}vel em: \url{https://hmd.adm.br/ebooks/diversos/Bitcoin - A Moeda
+  Digital.pdf}.}
+
 \end{thebibliography}
