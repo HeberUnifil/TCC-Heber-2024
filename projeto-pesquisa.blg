@@ -8,6 +8,7 @@ A level-1 auxiliary file: ./cap-problematica.aux
 A level-1 auxiliary file: ./cap-metodologia.aux
 A level-1 auxiliary file: ./cap-resultados-esperados.aux
 A level-1 auxiliary file: ./cap-estado-arte.aux
+A level-1 auxiliary file: ./cap-fundament-teorica.aux
 The style file: abntex2-alf.bst
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
@@ -29,44 +30,44 @@ Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://www.abntex.net.br/                               |
 +---------------------------------------------------------+
-You've used 9 entries,
+You've used 21 entries,
             6714 wiz_defined-function locations,
-            1244 strings with 10286 characters,
-and the built_in function-call counts, 7680 in all, are:
-= -- 833
-> -- 121
-< -- 103
-+ -- 188
-- -- 40
-* -- 424
-:= -- 1076
-add.period$ -- 26
-call.type$ -- 9
-change.case$ -- 53
-chr.to.int$ -- 12
-cite$ -- 8
-duplicate$ -- 597
-empty$ -- 511
-format.name$ -- 184
-if$ -- 1675
+            1309 strings with 12331 characters,
+and the built_in function-call counts, 17087 in all, are:
+= -- 1498
+> -- 483
+< -- 120
++ -- 320
+- -- 149
+* -- 1111
+:= -- 2327
+add.period$ -- 67
+call.type$ -- 21
+change.case$ -- 179
+chr.to.int$ -- 39
+cite$ -- 20
+duplicate$ -- 1060
+empty$ -- 1209
+format.name$ -- 701
+if$ -- 3888
 int.to.chr$ -- 0
 int.to.str$ -- 0
-missing$ -- 157
-newline$ -- 44
-num.names$ -- 40
-pop$ -- 220
+missing$ -- 368
+newline$ -- 104
+num.names$ -- 100
+pop$ -- 494
 preamble$ -- 1
-purify$ -- 27
+purify$ -- 74
 quote$ -- 0
-skip$ -- 658
+skip$ -- 1167
 stack$ -- 1
-substring$ -- 283
-swap$ -- 210
-text.length$ -- 4
+substring$ -- 683
+swap$ -- 442
+text.length$ -- 16
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 52
+while$ -- 137
 width$ -- 0
-write$ -- 123
+write$ -- 308

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.4.23)  22 MAY 2024 18:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.4.23)  22 MAY 2024 21:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1112,7 +1112,7 @@ File: t1phv.fd 2020/03/25 scalable font definitions for T1/phv.
 \cftquadronumwidth=\skip279
  (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
-)) (./projeto-pesquisa.aux (./pre-folhaderosto.aux) (./pre-resumo.aux) (./cap-introducao.aux) (./cap-problematica.aux) (./cap-metodologia.aux) (./cap-resultados-esperados.aux) (./cap-estado-arte.aux))
+)) (./projeto-pesquisa.aux (./pre-folhaderosto.aux) (./pre-resumo.aux) (./cap-introducao.aux) (./cap-problematica.aux) (./cap-metodologia.aux) (./cap-resultados-esperados.aux) (./cap-estado-arte.aux) (./cap-fundament-teorica.aux))
 \openout1 = `projeto-pesquisa.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
@@ -1277,13 +1277,31 @@ LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10> not available
 ]
 \openout2 = `./cap-estado-arte.aux'.
 
- (./cap-estado-arte.tex [8
+ (./cap-estado-arte.tex
+Overfull \hbox (3.03114pt too wide) in paragraph at lines 2--3
+[]\T1/phv/m/n/12 O es-tudo dos crip-to-a-ti-vos, fre-quen-te-mente re-fe-ri-dos como crip-to-mo-e-das, emer-
+ []
+
+[8
+
+
+
+
+] [9]
+
+LaTeX Font Warning: Font shape `T1/cmr/b/it' undefined
+(Font)              using `T1/cmr/b/n' instead on input line 50.
+
+[10]) [11]
+\openout2 = `./cap-fundament-teorica.aux'.
+
+ (./cap-fundament-teorica.tex [12
 
 
 
 
 ]
-<images/figura 2.png, id=87, 616.704pt x 227.6505pt>
+<images/figura 2.png, id=153, 616.704pt x 227.6505pt>
 File: images/figura 2.png Graphic file (type png)
 <use images/figura 2.png>
 Package pdftex.def Info: images/figura 2.png  used on input line 25.
@@ -1293,7 +1311,7 @@ Overfull \hbox (43.15009pt too wide) in paragraph at lines 25--28
  [][] 
  []
 
-<images/figura 1.png, id=90, 781.11826pt x 374.5995pt>
+<images/figura 1.png, id=156, 781.11826pt x 374.5995pt>
 File: images/figura 1.png Graphic file (type png)
 <use images/figura 1.png>
 Package pdftex.def Info: images/figura 1.png  used on input line 35.
@@ -1303,46 +1321,49 @@ Overfull \hbox (43.15009pt too wide) in paragraph at lines 35--38
  [][] 
  []
 
-[9 <./images/figura 2.png (PNG copy)> <./images/figura 1.png (PNG copy)>] [10] [11
+[13 <./images/figura 2.png (PNG copy)> <./images/figura 1.png (PNG copy)>] [14] [15
 
 ]
-<images/atributos.png, id=127, 320.397pt x 169.8345pt>
+<images/atributos.png, id=193, 320.397pt x 169.8345pt>
 File: images/atributos.png Graphic file (type png)
 <use images/atributos.png>
 Package pdftex.def Info: images/atributos.png  used on input line 92.
 (pdftex.def)             Requested size: 364.00139pt x 192.96028pt.
- [12]) [13 <./images/atributos.png>] (./projeto-pesquisa.bbl (./projeto-pesquisa.brf)
+ [16]) [17 <./images/atributos.png>] (./projeto-pesquisa.bbl (./projeto-pesquisa.brf)
 \tf@brf=\write5
 \openout5 = `projeto-pesquisa.brf'.
 
 
 bibitemlist
-) [14
+[18
 
 
 
 
-]
+]) [19]
 \tf@toc=\write6
 \openout6 = `projeto-pesquisa.toc'.
 
- (./projeto-pesquisa.aux (./pre-folhaderosto.aux) (./pre-resumo.aux) (./cap-introducao.aux) (./cap-problematica.aux) (./cap-metodologia.aux) (./cap-resultados-esperados.aux) (./cap-estado-arte.aux))
+ (./projeto-pesquisa.aux (./pre-folhaderosto.aux) (./pre-resumo.aux) (./cap-introducao.aux) (./cap-problematica.aux) (./cap-metodologia.aux) (./cap-resultados-esperados.aux) (./cap-estado-arte.aux) (./cap-fundament-teorica.aux))
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
 Package rerunfilecheck Info: File `projeto-pesquisa.brf' has not changed.
-(rerunfilecheck)             Checksum: 54912761F86B4015E64718167281423D;552.
+(rerunfilecheck)             Checksum: C0F57F7522E662D305CE51F63F4727A6;1217.
  ) 
 Here is how much of TeX's memory you used:
- 36070 strings out of 480154
- 666490 string characters out of 5893788
- 1280561 words of memory out of 5000000
- 53309 multiletter control sequences out of 15000+600000
+ 36211 strings out of 480154
+ 669768 string characters out of 5893788
+ 1286561 words of memory out of 5000000
+ 53421 multiletter control sequences out of 15000+600000
  502462 words of font info for 65 fonts, out of 8000000 for 9000
  61 hyphenation exceptions out of 8191
- 114i,12n,117p,1172b,465s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 114i,12n,117p,1172b,593s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/lenhas/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrb1440.600pk> </home/lenhas/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrb1728.600pk>{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on projeto-pesquisa.pdf (15 pages, 304202 bytes).
+Output written on projeto-pesquisa.pdf (20 pages, 321022 bytes).
 PDF statistics:
- 310 PDF objects out of 1000 (max. 8388607)
- 209 compressed objects within 3 object streams
- 47 named destinations out of 1000 (max. 500000)
- 137 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 424 PDF objects out of 1000 (max. 8388607)
+ 313 compressed objects within 4 object streams
+ 69 named destinations out of 1000 (max. 500000)
+ 177 words of extra memory for PDF output out of 10000 (max. 10000000)
 

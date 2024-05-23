@@ -12,10 +12,16 @@
 \contentsline {section}{\numberline {4.1}Limitações do trabalho}{7}{section.4.1}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Estado da Arte}}{8}{chapter.5}%
-\contentsline {section}{\numberline {5.1}O Bitcoin}{8}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Escola Austríaca de Economia}{11}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Bitcoin é dinheiro de verdade?}{12}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Um Criptoativo Educativo}{13}{section.5.4}%
+\contentsline {section}{\numberline {5.1}Tecnologia}{8}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Regulamentação}{9}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Adoção}{9}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Inovação}{10}{section.5.4}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {Fundamentação Teórica}}{12}{chapter.6}%
+\contentsline {section}{\numberline {6.1}O Bitcoin}{12}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Escola Austríaca de Economia}{15}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Bitcoin é dinheiro de verdade?}{16}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Um Criptoativo Educativo}{17}{section.6.4}%
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{\MakeTextUppercase {Refer\^encias}}{14}{section*.16}%
+\contentsline {chapter}{\MakeTextUppercase {Refer\^encias}}{18}{section*.26}%

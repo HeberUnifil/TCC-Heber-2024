@@ -5,15 +5,56 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{v-1.9.7 }
 
+\bibitem[Auer e Claessens 2018]{auer2018regulating}
+\abntrefinfo{Auer e Claessens}{AUER; CLAESSENS}{2018}
+{AUER, R.; CLAESSENS, S. Regulating cryptocurrencies: Assessing market
+  reactions.
+\emph{BIS Quarterly Review}, 2018.}
+
+\bibitem[Bouri et al. 2017]{bouri2017hedge}
+\abntrefinfo{Bouri et al.}{BOURI et al.}{2017}
+{BOURI, E. et al. On the hedge and safe haven properties of bitcoin: Is it
+  really more than a diversifier?
+\emph{Finance Research Letters}, Elsevier, v.~20, p. 192--198, 2017.}
+
+\bibitem[Buterin 2013]{buterin2013ethereum}
+\abntrefinfo{Buterin}{BUTERIN}{2013}
+{BUTERIN, V. \emph{Ethereum: A Next-Generation Smart Contract and Decentralized
+  Application Platform}. 2013.
+\url{https://github.com/ethereum/wiki/wiki/White-Paper}.}
+
 \bibitem[Böhm-Bawerk 1922]{von1922capital}
 \abntrefinfo{Böhm-Bawerk}{BöHM-BAWERK}{1922}
 {BöHM-BAWERK, E. von. \emph{Capital and interest: A critical history of
   economical theory}. [S.l.]: Brentano, 1922.}
 
+\bibitem[Commission 2020]{european2020proposal}
+\abntrefinfo{Commission}{COMMISSION}{2020}
+{COMMISSION, E. \emph{Proposal for a Regulation on Markets in Crypto-assets}.
+  2020.
+\url{https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/12447-Framework-for-markets-in-crypto-assets}.}
+
+\bibitem[(FATF) 2019]{fatf2019guidance}
+\abntrefinfo{(FATF)}{(FATF)}{2019}
+{(FATF), F. A. T.~F. \emph{Guidance for a Risk-Based Approach to Virtual Assets
+  and Virtual Asset Service Providers}. 2019.
+\url{https://www.fatf-gafi.org/publications/fatfrecommendations/documents/guidance-rba-virtual-assets.html}.}
+
 \bibitem[Hayek 2017]{hayek2017desestatizaccao}
 \abntrefinfo{Hayek}{HAYEK}{2017}
 {HAYEK, F.~A. \emph{Desestatiza{\c{c}}{\~a}o do dinheiro}. [S.l.]: LVM Editora,
   2017.}
+
+\bibitem[Kondor, Pósfai e Vattay 2014]{kondor2014do}
+\abntrefinfo{Kondor, Pósfai e Vattay}{KONDOR; PóSFAI; VATTAY}{2014}
+{KONDOR, D.; PóSFAI, M.; VATTAY, G. Do the rich get richer? an empirical
+  analysis of the bitcoin transaction network.
+\emph{PLOS ONE}, Public Library of Science, v.~9, n.~2, p. e86197, 2014.}
+
+\bibitem[Kwon 2016]{kwon2016cosmos}
+\abntrefinfo{Kwon}{KWON}{2016}
+{KWON, J. \emph{Cosmos: A Network of Distributed Ledgers}. 2016.
+\url{https://cosmos.network/resources/whitepaper}.}
 
 \bibitem[Menger 2017]{menger2017liberalismo}
 \abntrefinfo{Menger}{MENGER}{2017}
@@ -46,5 +87,35 @@ Dispon{\'\i}vel em: \url{http://www.bitcoin.org/bitcoin.pdf}.}
 \emph{Mises Brasil}, v.~2, p.~239, 2014.
 Dispon{\'\i}vel em: \url{https://hmd.adm.br/ebooks/diversos/Bitcoin - A Moeda
   Digital.pdf}.}
+
+\bibitem[Wang et al. 2021]{wang2021non}
+\abntrefinfo{Wang et al.}{WANG et al.}{2021}
+{WANG, Q. et al. Non-fungible token (nft): Overview, evaluation, opportunities
+  and challenges.
+\emph{arXiv preprint arXiv:2105.07447}, 2021.}
+
+\bibitem[Wood 2016]{wood2016polkadot}
+\abntrefinfo{Wood}{WOOD}{2016}
+{WOOD, G. \emph{Polkadot: Vision for a Heterogeneous Multi-chain Framework}.
+  2016.
+\url{https://polkadot.network/PolkaDotPaper.pdf}.}
+
+\bibitem[Zhang, Xue e Huang 2019]{zhang2019secure}
+\abntrefinfo{Zhang, Xue e Huang}{ZHANG; XUE; HUANG}{2019}
+{ZHANG, P.; XUE, X.; HUANG, X. A secure system for pervasive social
+  network-based healthcare.
+\emph{IEEE Access}, IEEE, v.~7, p. 116075--116088, 2019.}
+
+\bibitem[Zhang, Wang e Tang 2020]{zhang2020data}
+\abntrefinfo{Zhang, Wang e Tang}{ZHANG; WANG; TANG}{2020}
+{ZHANG, R.; WANG, Y.; TANG, J. Data privacy for blockchain and ai convergence:
+  Challenges and opportunities.
+\emph{IEEE Access}, IEEE, v.~8, p. 21091--21101, 2020.}
+
+\bibitem[Zohar 2015]{zohar2015bitcoin}
+\abntrefinfo{Zohar}{ZOHAR}{2015}
+{ZOHAR, A. Bitcoin: under the hood.
+\emph{Communications of the ACM}, ACM New York, NY, USA, v.~58, n.~9, p.
+  104--113, 2015.}
 
 \end{thebibliography}
