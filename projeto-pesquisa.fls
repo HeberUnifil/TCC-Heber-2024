@@ -1600,6 +1600,9 @@ INPUT ./cap-estado-arte.aux
 INPUT ./cap-fundament-teorica.aux
 INPUT ./cap-fundament-teorica.aux
 INPUT ./cap-fundament-teorica.aux
+INPUT ./cap-cripto-educativo.aux
+INPUT ./cap-cripto-educativo.aux
+INPUT ./cap-cripto-educativo.aux
 OUTPUT projeto-pesquisa.aux
 INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
@@ -1804,6 +1807,16 @@ INPUT ./images/atributos.png
 INPUT images/atributos.png
 INPUT ./images/atributos.png
 INPUT ./images/atributos.png
+INPUT ./cap-cripto-educativo.tex
+INPUT ./cap-cripto-educativo.tex
+INPUT ./cap-cripto-educativo.tex
+OUTPUT ./cap-cripto-educativo.aux
+INPUT ./cap-cripto-educativo.tex
+INPUT ./cap-cripto-educativo.tex
+INPUT ./cap-cripto-educativo.tex
+INPUT ./cap-cripto-educativo.tex
+INPUT ./cap-cripto-educativo.tex
+INPUT ./cap-cripto-educativo.tex
 INPUT ./projeto-pesquisa.bbl
 INPUT projeto-pesquisa.bbl
 INPUT ./projeto-pesquisa.bbl
@@ -1840,6 +1853,9 @@ INPUT ./cap-estado-arte.aux
 INPUT ./cap-fundament-teorica.aux
 INPUT ./cap-fundament-teorica.aux
 INPUT ./cap-fundament-teorica.aux
+INPUT ./cap-cripto-educativo.aux
+INPUT ./cap-cripto-educativo.aux
+INPUT ./cap-cripto-educativo.aux
 INPUT ./projeto-pesquisa.brf
 INPUT ./projeto-pesquisa.brf
 INPUT /home/lenhas/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrb1440.600pk

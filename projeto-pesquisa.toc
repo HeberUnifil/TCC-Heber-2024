@@ -20,8 +20,10 @@
 \contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {Fundamentação Teórica}}{12}{chapter.6}%
 \contentsline {section}{\numberline {6.1}O Bitcoin}{12}{section.6.1}%
 \contentsline {section}{\numberline {6.2}Escola Austríaca de Economia}{15}{section.6.2}%
-\contentsline {section}{\numberline {6.3}Bitcoin é dinheiro de verdade?}{16}{section.6.3}%
-\contentsline {section}{\numberline {6.4}Um Criptoativo Educativo}{17}{section.6.4}%
+\contentsline {section}{\numberline {6.3}Definição conceitual de maior incisão no projeto}{17}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Bitcoin é dinheiro de verdade?}{19}{section.6.4}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {7}\MakeTextUppercase {Conceito de possível aplicação da arquitetura de criptoativos}}{21}{chapter.7}%
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{\MakeTextUppercase {Refer\^encias}}{18}{section*.26}%
+\contentsline {chapter}{\MakeTextUppercase {Refer\^encias}}{22}{section*.42}%

@@ -7,3 +7,5 @@
 {"rule":"PT_BARBARISMS_REPLACE","sentence":"^\\QHayek salienta que distorções nos preços e na produção são frequentemente o resultado de manipulações no crédito por parte dos bancos centrais, o que leva a investimentos errôneos e a ciclos de boom e recessão.\\E$"}
 {"rule":"HUNSPELL_RULE","sentence":"^\\QRothbard, por sua vez, enfatiza que \"a expansão do crédito bancário, muitas vezes incentivada por políticas governamentais, é a precursora de uma recessão econômica\" (Rothbard, 1963).\\E$"}
 {"rule":"PT_CLICHE_REPLACE","sentence":"^\\QRothbard, por sua vez, enfatiza que \"a expansão do crédito bancário, muitas vezes incentivada por políticas governamentais, é a precursora de uma recessão econômica\" (Rothbard, 1963).\\E$"}
+{"rule":"EMERGIR_EM","sentence":"^\\QA Escola Austríaca de Economia, emergida no final do século XIX, representa uma tradição heterodoxa significativa no pensamento econômico.\\E$"}
+{"rule":"PT_BR_SIMPLE_REPLACE","sentence":"^\\QSeu trabalho desafiou a teoria do valor-trabalho dos economistas clássicos e introduziu a teoria marginalista do valor.\\E$"}
