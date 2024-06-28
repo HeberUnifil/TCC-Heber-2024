@@ -1,3 +1,4 @@
+\backcite {Yetmar2023}{{4}{1}{chapter.1}}
 \backcite {Nakamoto2009}{{8}{5.1}{section*.4}}
 \backcite {buterin2013ethereum}{{8}{5.1}{section*.5}}
 \backcite {wood2016polkadot}{{8}{5.1}{section*.6}}
@@ -40,5 +41,4 @@
 \backcite {rothbard2022governo}{{19}{6.3}{section*.37}}
 \backcite {Ulrich2014}{{19}{6.4}{section.6.4}}
 \backcite {Ulrich2014}{{19}{6.4}{section*.38}}
-\backcite {Ulrich2014}{{20}{3}{figure.6.3}}
-\backcite {Ulrich2014}{{20}{6.4}{figure.6.3}}
+\backcite {Ulrich2014}{{20}{6.4}{table.6.1}}

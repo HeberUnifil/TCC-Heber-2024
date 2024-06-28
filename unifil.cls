@@ -17,6 +17,10 @@ english,brazil}{abntex2}%
 \ProcessOptions\relax
 \LoadClass{abntex2}
 
+\RequirePackage[table,xcdraw]{xcolor}
+\usepackage{placeins}
+\usepackage{pgfgantt}
+
 \RequirePackage[inner=30mm,outer=20mm,top=30mm,bottom=20mm]{geometry}
 \RequirePackage{indentfirst}
 \RequirePackage{parskip}
@@ -33,6 +37,7 @@ english,brazil}{abntex2}%
 \RequirePackage{lipsum}
 
 \RequirePackage[subentrycounter,seeautonumberlist]{glossaries}
+\RequirePackage{pgfgantt}
 
 \RequirePackage[brazilian,hyperpageref]{backref}
 \RequirePackage[alf]{abntex2cite}

@@ -1,8 +1,71 @@
 \chapter{Cronograma}
+Consta em seguida um gráfico de Gantt representando a cronologia do projeto a partir da metade de Julho de 2024.
+ 
+O planejamento das atividades foram segregadas nos seguintes tópicos:
 
-Faça um cronograma de atividades por semana de trabalho.
-\begin{itemize}
-\item Somente atividades da metodologia e etapas da escrita da monografia.
-\item Não deve repetir as atividades da disciplina de TCC.
-\item É necessário ser definido junto ao orientador.
-\end{itemize}
+\begin{enumerate}
+    \item \textbf{Linguagem:} Neste tópico será efetuada uma pesquisa diante das linguagens de baixo nível\footnote{Linguagens de baixo nível são linguagens cujo seus símbolos são uma representação direta do código de máquina} sobre qual teria a melhor aplicação diante do contexto de \textit{blockchains} e criptoativos;
+    
+    \item \textbf{Teoria econômica:} Neste tópico será efetuada uma pesquisa diante dos autores austríacos sobre as regras e ciclos econômicos, visando melhor aplicação diante do sistema;
+    
+    \item \textbf{Programação:} Neste tópico será efetuada de fato a estruturação, conceitualização e, se possível, a programação e teste do sistema conceituado;
+    
+    \item \textbf{Documentação:} Neste tópico será efetuada toda a documentação técnica do sistema conceituado em conjunto com o versionamento do repositório do projeto;
+    
+    \item \textbf{Escrita:} Neste tópico é efetuada toda a escrita do artigo que será entregue no final do projeto;
+    
+    \item \textbf{Revisão:} Neste tópico é efetuada a revisão da escrita, programação e andamento do projeto por meio do professor orientador;
+    
+    \item \textbf{Apresentação:} Aqui será apresentado o trabalho para avaliação e futura publicação do artigo. 
+
+\end{enumerate}
+
+\begin{figure}[h]
+    \begin{center}
+    
+    \begin{ganttchart}[y unit title=0.7cm,
+    x unit =0.6cm,
+    y unit chart=0.6cm,
+    vgrid,hgrid, 
+    title label anchor/.style={below=-1.6ex},
+    title left shift=.05,
+    title right shift=-.05,
+    title height=1,
+    progress label text={},
+    bar height=0.7,
+    group right shift=0,
+    group top shift=.6,
+    group height=.3]{1}{22}
+    %labels
+    \gantttitle{Cronograma}{22} \\
+    \gantttitle{Julho}{2} 
+    \gantttitle{Agosto}{4} 
+    \gantttitle{Setembro}{4} 
+    \gantttitle{Outubro}{4} 
+    \gantttitle{Novembro}{4} 
+    \gantttitle{Dezembro}{4} \\
+    %tasks
+    \ganttbar{Linguagem}{1}{2} \\
+    \ganttbar{Teoria econômica}{3}{4} \\
+    \ganttbar{Programação}{5}{16} \\
+    \ganttbar{Documentação}{7}{16} \\
+    \ganttbar{Escrita}{2}{18} \\
+    \ganttbar{Revisão}{11}{20} \\
+    \ganttbar{Apresentação}{21}{22}
+    
+    %relations 
+    % \ganttlink{elem0}{elem2} 
+    % \ganttlink{elem1}{elem2} 
+    % \ganttlink{elem1}{elem2} 
+    % \ganttlink{elem3}{elem4} 
+    % \ganttlink{elem1}{elem5} 
+    % \ganttlink{elem3}{elem5} 
+    % \ganttlink{elem2}{elem6} 
+    % \ganttlink{elem3}{elem6} 
+    % \ganttlink{elem5}{elem7} 
+    \end{ganttchart}
+    \end{center}
+    
+    \caption{Gráfico de Gantt do Cronograma de entregas do projeto.}
+
+\end{figure}

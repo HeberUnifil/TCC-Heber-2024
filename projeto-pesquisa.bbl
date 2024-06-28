@@ -34,9 +34,9 @@
   2020.
 \url{https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/12447-Framework-for-markets-in-crypto-assets}.}
 
-\bibitem[(FATF) 2019]{fatf2019guidance}
-\abntrefinfo{(FATF)}{(FATF)}{2019}
-{(FATF), F. A. T.~F. \emph{Guidance for a Risk-Based Approach to Virtual Assets
+\bibitem[FATF 2019]{fatf2019guidance}
+\abntrefinfo{FATF}{FATF}{2019}
+{FATF, F. A. T.~F. \emph{Guidance for a Risk-Based Approach to Virtual Assets
   and Virtual Asset Service Providers}. 2019.
 \url{https://www.fatf-gafi.org/publications/fatfrecommendations/documents/guidance-rba-virtual-assets.html}.}
 
@@ -124,6 +124,12 @@ Dispon{\'\i}vel em: \url{https://hmd.adm.br/ebooks/diversos/Bitcoin - A Moeda
 {WOOD, G. \emph{Polkadot: Vision for a Heterogeneous Multi-chain Framework}.
   2016.
 \url{https://polkadot.network/PolkaDotPaper.pdf}.}
+
+\bibitem[Yetmar 2023]{Yetmar2023}
+\abntrefinfo{Yetmar}{YETMAR}{2023}
+{YETMAR, S.~A. What is cryptocurrency?
+\emph{Journal of Business Theory and Practice}, 2023.
+Dispon{\'\i}vel em: \url{https://api.semanticscholar.org/CorpusID:240345041}.}
 
 \bibitem[Zhang, Xue e Huang 2019]{zhang2019secure}
 \abntrefinfo{Zhang, Xue e Huang}{ZHANG; XUE; HUANG}{2019}

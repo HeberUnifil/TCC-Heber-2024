@@ -24,6 +24,8 @@
 \contentsline {section}{\numberline {6.4}Bitcoin é dinheiro de verdade?}{19}{section.6.4}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {7}\MakeTextUppercase {Conceito de possível aplicação da arquitetura de criptoativos}}{21}{chapter.7}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {8}\MakeTextUppercase {Cronograma}}{22}{chapter.8}%
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{\MakeTextUppercase {Refer\^encias}}{22}{section*.42}%
+\contentsline {chapter}{\MakeTextUppercase {Refer\^encias}}{24}{section*.42}%
