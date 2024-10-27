@@ -1,20 +1,63 @@
-\section*{DESENVOLVIMENTO}
+\section*{ESTUDO DA ARQUITETURA \textit{BLOCKCHAIN} UTILIZANDO RUST}
 
-\section*{Possível aplicação da arquitetura de criptoativos}
+Utilizamos de uma implementação experimental e educativa, que explica os princípios fundamentais da tecnologia \textit{blockchain} e explora os recursos da linguagem Rust que a tornam adequada para esse tipo de aplicação. Rust é amplamente reconhecida por seu gerenciamento de memória seguro e por evitar vulnerabilidades comuns a linguagens como C++ \cite{matsakis2014rust}, o que é crucial no desenvolvimento de sistemas descentralizados e imutáveis, como uma \textit{blockchain}.
 
-Por viés de exemplificar a utilidade da arquitetura de criptoativos e das suas funções como moeda de fato, este projeto pretende pesquisar e, se possível, teorizar o conceito de um protocolo de criptoativos dedicado a auxiliar no ensino de finanças economia, conforme explicado a seguir.
+Introdutoriamente utilizamos como base as seguintes fontes de conteúdo:
+\begin{itemize}
 
-\section*{Um criptoativo educativo}
-\label{sec:educativo}
+\item \textbf{Documentação do \textit{Bitcoin}} \cite{nakamoto2008bitcoin}: Esta documentação foi utilizada por conta da orientação do projeto sob a arquitetura do \textit{Bitcoin}.
 
-Conforme definido nos capítulos anteriores, a arquitetura de moedas digitais vestem precisamente o papel de dinheiro. Ao passo que desenvolver sistemas descentralizados torna-se cada vez mais flexível, e melhor aplicável a ideia do desenvolvimento de um criptoativo que congregasse regras econômicas de forma didática e controlada.
+\item \textbf{Documentação do \textit{Rust - Programming Language}} \cite{rust_learn}: Esta documentação foi utilizada pela tratativa da utilização do Rust como linguagem principal do projeto.
 
-Este projeto tem o viés de, futuramente, estipular quais seriam as necessidades, objetivos, infraestruturas, linguagens, arquiteturas, e características base deste ativo. Em caso de sucesso da orquestração e desenvolvimento, é interessante a publicação de código aberto deste projeto, promovendo maior ciência e margem para melhorias.
+\item \textbf{Documentação do pacote Rust de requisições - Actix Web} \cite{actix_docs}: Esta documentação foi utilizada por conta da possivel exibição da \textit{blockchain} sob hospedagem e tratativa de requisições.
 
+\item \textbf{Coleção de video-aulas \textit{``Blockchain in Rust''}} \cite{geeklaunch_rust}: Esta coleção de aulas foram selecionadas como referência devida a sua contextualização orientada tanto ao \textit{Bitcoin} quanto ao Rust com a ressalva da ótima capacidade didática do autor. 
 
+\end{itemize}
 
+\section*{Estutura Geral do Código}
+Sob Perspectiva panorâmica, nosso projeto em Rust conta com as seguintes estruturas: \textbf{\textit{Outputs}, Transações, Blocos e a \textit{Blockchain}}
 
+Estas estruturas são as classes por onde a organização da nossa corrente registra seus dados, sob elas adicionamos \textit{outputs} às transações, adicionamos transações aos blocos, adicionamos blocos às correntes e aderessamos cada objeto aos seus devidos \textit{hashes}.
 
+\section*{Estutura da Transação}
+Em nosso estudo de arquitetura, as transações são compostas por 
+\textbf{entradas} (\textit{inputs}) e \textbf{saídas} (\textit{outputs}), referenciando o valor, quem será debitado e quem será creditado após a transação. Salve a consideração que transações sem entrada definida, que são chamadas de ''transações de base monetária''. Diferentemente do \textit{Bitcoin}, em nosso projeto transações desta natureza são permitidas a fim de exemplificar o comportamento inflacionário sob o aumento da base monetária.
 
+Seguindo a nossa referência, na documentação do \textit{Bitcoin}, vemos que as entradas nas transações na verdade são representações das saídas de transações anteriores, estabelecendo que apenas possamos gastar moedas que previamente nos foram dadas. 
 
+\section*{Estutura do Bloco}
+
+Conforme verificamos anteriormente, uma \textit{blockchain} é uma estrutura de dados distribuída e imutável composta por blocos interligados que contêm registros de transações \cite{nakamoto2008bitcoin}. No desenvolvimento dessa estrutura em Rust, cada bloco da \textit{blockchain} contém os seguintes elementos:
+\begin{itemize}
+     \item \textbf{Índice:} Define a posição do bloco na cadeia.
+     \item \textbf{\textit{Timestamp}:} Marca o horário de criação do bloco.
+     \item \textbf{Lista de transações:} Conjunto de dados que representa as operações contidas no bloco.
+     \item \textbf{Hash do bloco anterior:} Garantia de encadeamento entre os blocos.
+     \item \textbf{Hash do bloco atual:} Gerado a partir dos dados do bloco para garantir sua integridade e imutabilidade.
+     \item \textbf{Dificuldade:} Representa o nível de dificuldade atual do bloco durante sua mineração.
+     \item  \textbf{\textit{Nonce}:} Número gerado durante o processo de prova-de-trabalho.
+     
+\end{itemize}
+
+Essa arquitetura de blocos tem como orientação o padrão proposto por Satoshi e é implementada em Rust por meio de dados estruturados. Rust permite encapsular esses dados de forma eficiente, maximizando a segurança e minimizando o risco de falhas de memória \cite{matsakis2014rust}.
+
+\section*{Implementação da Estrutura da Blockchain}
+A estrutura da blockchain propriamente dita é composta por uma lista de blocos e métodos para adicionar novos blocos, além de validar a cadeia. Em nossa implementação, seguimos o padrão de encadeamento proposto por Nakamoto, mantendo o último bloco adicionado como referência para o próximo.
+
+Seguimos também com as verificações que ocorrem na corrente durante a adição de novos blocos, nem todas verificações foram possíveis de implementar devido à limitante do caráter educativo do estudo. Portanto foram implementadas as seguintes verificações, diante de seus respectivos códigos de erro:
+
+\begin{itemize}
+    \item \textbf{MismatchedIndex:} Verificação do posicionamento de blocos na corrente;
+    \item \textbf{InvalidHash:} Verificação dos \textit{Hahes} de cada bloco diante de sua dificuldade;
+    \item \textbf{AchronologicalTimestamp:} Verificação da marca temporal dos blocos;
+    \item \textbf{MismatchedPreviousHash:} Verificação do apontamento de \textit{Hahes} dos blocos;
+    \item \textbf{InvalidGenesisBlockFormat:} Verificação da formatação do bloco primeiro bloco (gênesis da corrente);
+    \item \textbf{InvalidInput:} Verificação do apontamento de entrada das transações;
+    \item \textbf{InsufficientInputValue:} Verificação da quantidade de moedas apontadas durante a entrada das transações; 
+
+\end{itemize}
+
+\section*{Implementação da Hospedagem}
+Durante nosso estudo, implementamos o \textit{backend} da nossa aplicação de \textit{blockchain} utilizando a biblioteca Rust Axtix Web. Neste sistema implementamos apenas a criação programática da corrente, a exibição geral de dados dos blocos, a exibição detalhada de cada bloco, e a introdução de novos blocos via requisições JSON (do inglês, Notação de objeto Javascript)
 
