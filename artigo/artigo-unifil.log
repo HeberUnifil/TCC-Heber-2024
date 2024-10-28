@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.10.5)  27 OCT 2024 22:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.10.5)  27 OCT 2024 22:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1283,102 +1283,102 @@ LaTeX Font Info:    Font shape `T1/phv/m/it' in size <12> not available
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}] [2] [3]
-Overfull \hbox (3.03114pt too wide) in paragraph at lines 137--138
+Overfull \hbox (3.03114pt too wide) in paragraph at lines 135--136
 []\T1/phv/m/n/12 O es-tudo dos crip-to-a-ti-vos, fre-quen-te-mente re-fe-ri-dos como crip-to-mo-e-das, emer-
  []
 
 [4]
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <14.4> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 139.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 137.
  [5] [6]
 LaTeX Font Info:    Font shape `T1/phv/b/it' in size <12> not available
-(Font)              Font shape `T1/phv/b/sl' tried instead on input line 167.
+(Font)              Font shape `T1/phv/b/sl' tried instead on input line 165.
  [7] [8]
 <../images/figura 2.png, id=100, 616.704pt x 227.6505pt>
 File: ../images/figura 2.png Graphic file (type png)
 <use ../images/figura 2.png>
-Package pdftex.def Info: ../images/figura 2.png  used on input line 196.
+Package pdftex.def Info: ../images/figura 2.png  used on input line 194.
 (pdftex.def)             Requested size: 364.00139pt x 134.3682pt.
 
-Overfull \hbox (43.15009pt too wide) in paragraph at lines 196--199
+Overfull \hbox (43.15009pt too wide) in paragraph at lines 194--197
  [] 
  []
 
 <../images/figura 1.png, id=103, 781.11826pt x 374.5995pt>
 File: ../images/figura 1.png Graphic file (type png)
 <use ../images/figura 1.png>
-Package pdftex.def Info: ../images/figura 1.png  used on input line 206.
+Package pdftex.def Info: ../images/figura 1.png  used on input line 204.
 (pdftex.def)             Requested size: 364.00139pt x 174.56421pt.
 
-Overfull \hbox (43.15009pt too wide) in paragraph at lines 206--209
+Overfull \hbox (43.15009pt too wide) in paragraph at lines 204--207
  [][] 
  []
 
 [9 <../images/figura 2.png (PNG copy)> <../images/figura 1.png (PNG copy)>] [10] [11] [12]
-Overfull \hbox (1.13617pt too wide) in paragraph at lines 266--267
+Overfull \hbox (1.13617pt too wide) in paragraph at lines 263--264
 []\T1/phv/b/n/12 Economia e a Ação Hu-mana \T1/phv/m/n/12 - Ludwig von Mi-ses, em "Ação Hu-mana"([][]MISES[][],
  []
 
 [13]
 LaTeX Font Info:    Font shape `T1/phv/b/it' in size <14> not available
-(Font)              Font shape `T1/phv/b/sl' tried instead on input line 276.
+(Font)              Font shape `T1/phv/b/sl' tried instead on input line 273.
 
-Overfull \hbox (2.61511pt too wide) in paragraph at lines 281--282
+Overfull \hbox (2.61511pt too wide) in paragraph at lines 278--279
 \T1/phv/m/n/12 qui-dez frente a ou-tros bens mo-ne-tá-rios e de seus pos-sí-veis usos al-ter-na-ti-vos"([][]ULRICH[][],
  []
 
 [14]
-LaTeX Font Info:    Trying to load font information for TS1+phv on input line 325.
+LaTeX Font Info:    Trying to load font information for TS1+phv on input line 322.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1phv.fd
 File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
 ) [15] [16]
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 369.
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 366.
  (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 ) [17{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}]
 <../images/terminal-blockchain.png, id=225, 882.29625pt x 208.52907pt>
 File: ../images/terminal-blockchain.png Graphic file (type png)
 <use ../images/terminal-blockchain.png>
-Package pdftex.def Info: ../images/terminal-blockchain.png  used on input line 391.
+Package pdftex.def Info: ../images/terminal-blockchain.png  used on input line 388.
 (pdftex.def)             Requested size: 455.0pt x 107.53844pt.
 <../images/navegador-blockchain.png, id=226, 665.48625pt x 740.7675pt>
 File: ../images/navegador-blockchain.png Graphic file (type png)
 <use ../images/navegador-blockchain.png>
-Package pdftex.def Info: ../images/navegador-blockchain.png  used on input line 402.
+Package pdftex.def Info: ../images/navegador-blockchain.png  used on input line 399.
 (pdftex.def)             Requested size: 455.0pt x 506.4732pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[18 <../images/terminal-blockchain.png (PNG copy)>] [19 <../images/navegador-blockchain.png>] [20] [21] (./artigo-unifil.bbl (./artigo-unifil.brf)
+[18 <../images/terminal-blockchain.png (PNG copy)>] [19 <../images/navegador-blockchain.png>] [20] (./artigo-unifil.bbl (./artigo-unifil.brf)
 \tf@brf=\write5
 \openout5 = `artigo-unifil.brf'.
 
- [22]
+ [21]
 bibitemlist
-[23
+[22
 
-]) [24] (./artigo-unifil.aux)
+]) [23] (./artigo-unifil.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2020/03/25>
  ***********
 Package rerunfilecheck Info: File `artigo-unifil.brf' has not changed.
-(rerunfilecheck)             Checksum: 98A1C9808F12DF690886B99D8B6504E0;2890.
+(rerunfilecheck)             Checksum: 44F35DA7D15502BD95170AA622155D3A;2890.
  ) 
 Here is how much of TeX's memory you used:
- 39449 strings out of 474222
- 736139 string characters out of 5748733
+ 39448 strings out of 474222
+ 736132 string characters out of 5748733
  1942975 words of memory out of 5000000
  60981 multiletter control sequences out of 15000+600000
  607940 words of font info for 88 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 114i,16n,121p,2382b,694s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 114i,16n,121p,2382b,692s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf/fonts/type1/public/cm-super/sftt1200.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvbo8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on artigo-unifil.pdf (24 pages, 466539 bytes).
+Output written on artigo-unifil.pdf (23 pages, 465836 bytes).
 PDF statistics:
- 371 PDF objects out of 1000 (max. 8388607)
- 326 compressed objects within 4 object streams
- 64 named destinations out of 1000 (max. 500000)
+ 365 PDF objects out of 1000 (max. 8388607)
+ 321 compressed objects within 4 object streams
+ 63 named destinations out of 1000 (max. 500000)
  41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
