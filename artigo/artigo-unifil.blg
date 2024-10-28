@@ -1,11 +1,6 @@
 This is BibTeX, Version 0.99d (TeX Live 2023/Debian)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: artigo-unifil.aux
-A level-1 auxiliary file: ./capitulos/cap-introducao.aux
-A level-1 auxiliary file: ./capitulos/cap-metodologia.aux
-A level-1 auxiliary file: ./capitulos/cap-estado-arte.aux
-A level-1 auxiliary file: ./capitulos/cap-cripto-educativo.aux
-A level-1 auxiliary file: ./capitulos/cap-conclusao.aux
 The style file: abntex2-alf.bst
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
@@ -27,44 +22,44 @@ Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://www.abntex.net.br/                               |
 +---------------------------------------------------------+
-You've used 33 entries,
+You've used 30 entries,
             6714 wiz_defined-function locations,
-            1366 strings with 13591 characters,
-and the built_in function-call counts, 28320 in all, are:
-= -- 2617
-> -- 681
+            1348 strings with 13157 characters,
+and the built_in function-call counts, 26448 in all, are:
+= -- 2482
+> -- 636
 < -- 304
-+ -- 568
-- -- 214
-* -- 1773
-:= -- 3786
-add.period$ -- 114
-call.type$ -- 33
-change.case$ -- 263
-chr.to.int$ -- 54
-cite$ -- 32
-duplicate$ -- 2017
-empty$ -- 1947
-format.name$ -- 1001
-if$ -- 6314
++ -- 553
+- -- 199
+* -- 1665
+:= -- 3522
+add.period$ -- 105
+call.type$ -- 30
+change.case$ -- 245
+chr.to.int$ -- 51
+cite$ -- 29
+duplicate$ -- 1903
+empty$ -- 1758
+format.name$ -- 932
+if$ -- 5861
 int.to.chr$ -- 0
 int.to.str$ -- 0
-missing$ -- 583
-newline$ -- 162
-num.names$ -- 160
-pop$ -- 770
+missing$ -- 526
+newline$ -- 150
+num.names$ -- 145
+pop$ -- 695
 preamble$ -- 1
-purify$ -- 111
+purify$ -- 102
 quote$ -- 0
-skip$ -- 2132
+skip$ -- 2024
 stack$ -- 1
-substring$ -- 1158
-swap$ -- 795
+substring$ -- 1107
+swap$ -- 753
 text.length$ -- 24
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 1
 warning$ -- 0
-while$ -- 218
+while$ -- 200
 width$ -- 0
-write$ -- 486
+write$ -- 444

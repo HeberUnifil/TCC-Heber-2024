@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.10.5)  27 OCT 2024 12:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.10.5)  27 OCT 2024 22:38
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1191,28 +1191,28 @@ Package: titlesec 2023/10/27 v2.16 Sectioning titles
 \titlewidth=\dimen354
 \titlewidthlast=\dimen355
 \titlewidthfirst=\dimen356
-) (./artigo-unifil.aux (./capitulos/cap-introducao.aux) (./capitulos/cap-metodologia.aux) (./capitulos/cap-estado-arte.aux) (./capitulos/cap-cripto-educativo.aux) (./capitulos/cap-conclusao.aux))
+) (./artigo-unifil.aux)
 \openout1 = `artigo-unifil.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-Package hyperref Info: Link coloring ON on input line 45.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+Package hyperref Info: Link coloring ON on input line 48.
 \myptabbox=\box86
 \myptabboxwidth=\skip282
  (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -1277,152 +1277,108 @@ Dictionary: translator-month-dictionary, Language: portuguese
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 52.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 55.
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <12> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 83.
  [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}]
-\openout2 = `./capitulos/cap-introducao.aux'.
-
- (./capitulos/cap-introducao.tex
-LaTeX Font Info:    Font shape `T1/phv/m/it' in size <12> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 3.
-
-
-LaTeX Warning: Reference `sec:educativo' on page 2 undefined on input line 12.
-
-[2
-
-
-]) [3]
-\openout2 = `./capitulos/cap-metodologia.aux'.
-
- (./capitulos/cap-metodologia.tex) [4
-
-
-
-]
-\openout2 = `./capitulos/cap-estado-arte.aux'.
-
- (./capitulos/cap-estado-arte.tex
-Overfull \hbox (3.03114pt too wide) in paragraph at lines 3--4
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}] [2] [3]
+Overfull \hbox (3.03114pt too wide) in paragraph at lines 137--138
 []\T1/phv/m/n/12 O es-tudo dos crip-to-a-ti-vos, fre-quen-te-mente re-fe-ri-dos como crip-to-mo-e-das, emer-
  []
 
-LaTeX Font Info:    Font shape `T1/phv/b/it' in size <14> not available
-(Font)              Font shape `T1/phv/b/sl' tried instead on input line 7.
-[5
-
-
-
-] [6]
-Underfull \hbox (badness 10000) in paragraph at lines 33--34
-
- []
-
+[4]
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <14.4> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 139.
+ [5] [6]
 LaTeX Font Info:    Font shape `T1/phv/b/it' in size <12> not available
-(Font)              Font shape `T1/phv/b/sl' tried instead on input line 38.
-[7] [8]
-<../images/figura 2.png, id=101, 616.704pt x 227.6505pt>
+(Font)              Font shape `T1/phv/b/sl' tried instead on input line 167.
+ [7] [8]
+<../images/figura 2.png, id=100, 616.704pt x 227.6505pt>
 File: ../images/figura 2.png Graphic file (type png)
 <use ../images/figura 2.png>
-Package pdftex.def Info: ../images/figura 2.png  used on input line 67.
+Package pdftex.def Info: ../images/figura 2.png  used on input line 196.
 (pdftex.def)             Requested size: 364.00139pt x 134.3682pt.
 
-Overfull \hbox (43.15009pt too wide) in paragraph at lines 67--70
+Overfull \hbox (43.15009pt too wide) in paragraph at lines 196--199
  [] 
  []
 
-<../images/figura 1.png, id=104, 781.11826pt x 374.5995pt>
+<../images/figura 1.png, id=103, 781.11826pt x 374.5995pt>
 File: ../images/figura 1.png Graphic file (type png)
 <use ../images/figura 1.png>
-Package pdftex.def Info: ../images/figura 1.png  used on input line 77.
+Package pdftex.def Info: ../images/figura 1.png  used on input line 206.
 (pdftex.def)             Requested size: 364.00139pt x 174.56421pt.
 
-Overfull \hbox (43.15009pt too wide) in paragraph at lines 77--80
+Overfull \hbox (43.15009pt too wide) in paragraph at lines 206--209
  [][] 
  []
 
+[9 <../images/figura 2.png (PNG copy)> <../images/figura 1.png (PNG copy)>] [10] [11] [12]
+Overfull \hbox (1.13617pt too wide) in paragraph at lines 266--267
+[]\T1/phv/b/n/12 Economia e a Ação Hu-mana \T1/phv/m/n/12 - Ludwig von Mi-ses, em "Ação Hu-mana"([][]MISES[][],
+ []
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+[13]
+LaTeX Font Info:    Font shape `T1/phv/b/it' in size <14> not available
+(Font)              Font shape `T1/phv/b/sl' tried instead on input line 276.
 
-[9 <../images/figura 2.png (PNG copy)>] [10 <../images/figura 1.png (PNG copy)>] [11] [12
-
-] [13] [14] [15] [16]
-Overfull \hbox (2.61511pt too wide) in paragraph at lines 188--189
+Overfull \hbox (2.61511pt too wide) in paragraph at lines 281--282
 \T1/phv/m/n/12 qui-dez frente a ou-tros bens mo-ne-tá-rios e de seus pos-sí-veis usos al-ter-na-ti-vos"([][]ULRICH[][],
  []
 
-[17]) [18]
-\openout2 = `./capitulos/cap-cripto-educativo.aux'.
-
- (./capitulos/cap-cripto-educativo.tex
-LaTeX Font Info:    Trying to load font information for TS1+phv on input line 8.
+[14]
+LaTeX Font Info:    Trying to load font information for TS1+phv on input line 325.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1phv.fd
 File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
-) [19
-
-
-
-] [20]) [21]
-\openout2 = `./capitulos/cap-conclusao.aux'.
-
- (./capitulos/cap-conclusao.tex
-<../images/terminal-blockchain.png, id=251, 882.29625pt x 208.52907pt>
+) [15] [16]
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 369.
+ (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
+) [17{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}]
+<../images/terminal-blockchain.png, id=225, 882.29625pt x 208.52907pt>
 File: ../images/terminal-blockchain.png Graphic file (type png)
 <use ../images/terminal-blockchain.png>
-Package pdftex.def Info: ../images/terminal-blockchain.png  used on input line 19.
+Package pdftex.def Info: ../images/terminal-blockchain.png  used on input line 391.
 (pdftex.def)             Requested size: 455.0pt x 107.53844pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<../images/navegador-blockchain.png, id=252, 665.48625pt x 740.7675pt>
+<../images/navegador-blockchain.png, id=226, 665.48625pt x 740.7675pt>
 File: ../images/navegador-blockchain.png Graphic file (type png)
 <use ../images/navegador-blockchain.png>
-Package pdftex.def Info: ../images/navegador-blockchain.png  used on input line 30.
+Package pdftex.def Info: ../images/navegador-blockchain.png  used on input line 402.
 (pdftex.def)             Requested size: 455.0pt x 506.4732pt.
+
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [22
-
-
-
-] [23 <../images/terminal-blockchain.png (PNG copy)> <../images/navegador-blockchain.png>] (./artigo-unifil.bbl (./artigo-unifil.brf)
+[18 <../images/terminal-blockchain.png (PNG copy)>] [19 <../images/navegador-blockchain.png>] [20] [21] (./artigo-unifil.bbl (./artigo-unifil.brf)
 \tf@brf=\write5
 \openout5 = `artigo-unifil.brf'.
 
-
+ [22]
 bibitemlist
-[24
+[23
 
-
-
-]) [25] (./artigo-unifil.aux (./capitulos/cap-introducao.aux) (./capitulos/cap-metodologia.aux) (./capitulos/cap-estado-arte.aux) (./capitulos/cap-cripto-educativo.aux) (./capitulos/cap-conclusao.aux))
+]) [24] (./artigo-unifil.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2020/03/25>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
 Package rerunfilecheck Info: File `artigo-unifil.brf' has not changed.
-(rerunfilecheck)             Checksum: F06223106A14E4E9A80302CD5B9D4A2F;3071.
+(rerunfilecheck)             Checksum: 98A1C9808F12DF690886B99D8B6504E0;2890.
  ) 
 Here is how much of TeX's memory you used:
- 39584 strings out of 474222
- 741367 string characters out of 5748733
- 1939975 words of memory out of 5000000
- 61082 multiletter control sequences out of 15000+600000
- 604611 words of font info for 85 fonts, out of 8000000 for 9000
+ 39449 strings out of 474222
+ 736139 string characters out of 5748733
+ 1942975 words of memory out of 5000000
+ 60981 multiletter control sequences out of 15000+600000
+ 607940 words of font info for 88 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 114i,16n,121p,2382b,718s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvbo8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on artigo-unifil.pdf (25 pages, 434996 bytes).
+ 114i,16n,121p,2382b,694s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texmf/fonts/type1/public/cm-super/sftt1200.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvbo8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
+Output written on artigo-unifil.pdf (24 pages, 466539 bytes).
 PDF statistics:
- 387 PDF objects out of 1000 (max. 8388607)
- 343 compressed objects within 4 object streams
- 68 named destinations out of 1000 (max. 500000)
- 49 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 371 PDF objects out of 1000 (max. 8388607)
+ 326 compressed objects within 4 object streams
+ 64 named destinations out of 1000 (max. 500000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
