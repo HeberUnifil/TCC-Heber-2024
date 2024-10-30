@@ -374,8 +374,8 @@ Seguimos também com as verificações que ocorrem na corrente durante a adiçã
 Durante nosso estudo, implementamos o \textit{backend} da nossa aplicação de \textit{blockchain} utilizando a biblioteca Rust Actix Web. Neste sistema implementamos apenas apenas duas rotas, pois o objetivo deste \textit{backend} seria apenas visualizar em detalhes a formação da corrente e inserir novos blocos à sequência, sendo as rotas:
 
 \begin{itemize}
-\item Rota GET \texttt{``/'':} Esta rota é dedicada a exibição detalhada de dados dos blocos, ela coleta todos os blocos da corrente, os ordena e exibe os dados de Index, \textit{Hash}, \textit{Hash} do bloco anterior, quantidade de tentativas na mineração e as transações contida no bloco, com suas respectivas entradas e saidas de moedas;
-\item Rota POST \texttt{``/add'':} Esta rota é dedicada a receber um arquivo JSON, contendo os dados de remetente, destinatário, valor de entrada e valor de saída de moedas, considerando que a ausência de remetente caracteriza-se como uma transação de base monetária.
+\item \textbf{Rota GET \texttt{``/'':}} Esta rota é dedicada a exibição detalhada de dados dos blocos, ela coleta todos os blocos da corrente, os ordena e exibe os dados de Index, \textit{Hash}, \textit{Hash} do bloco anterior, quantidade de tentativas na mineração e as transações contida no bloco, com suas respectivas entradas e saídas de moedas;
+\item \textbf{Rota POST \texttt{``/add'':}} Esta rota é dedicada a receber um arquivo JSON, contendo os dados de remetente, destinatário, valor de entrada e valor de saída de moedas, considerando que a ausência de remetente caracteriza-se como uma transação de base monetária.
 
 \end{itemize}
 
