@@ -371,9 +371,16 @@ Seguimos também com as verificações que ocorrem na corrente durante a adiçã
 
 \subsection*{Implementação da Hospedagem}
 
-Durante nosso estudo, implementamos o \textit{backend} da nossa aplicação de \textit{blockchain} utilizando a biblioteca Rust Actix Web. Neste sistema implementamos apenas a criação programática da corrente, a exibição geral de dados dos blocos, a exibição detalhada de cada bloco, e a introdução de novos blocos via requisições JSON.
+Durante nosso estudo, implementamos o \textit{backend} da nossa aplicação de \textit{blockchain} utilizando a biblioteca Rust Actix Web. Neste sistema implementamos apenas apenas duas rotas, pois o objetivo deste \textit{backend} seria apenas visualizar em detalhes a formação da corrente e inserir novos blocos à sequência, sendo as rotas:
 
-A seguir é apresentado imagens desta experimentação, o repositório \footnote{\href{https://github.com/HeberUnifil/Educational-Blockchain-Currency}{\textcolor{blue}{https://github.com/HeberUnifil/Educational-Blockchain-Currency}}} onde o código e os arquivos deste teste foram armazenados na plataforma Github por preferência dos autores.
+\begin{itemize}
+\item Rota GET \texttt{``/'':} Esta rota é dedicada a exibição detalhada de dados dos blocos, ela coleta todos os blocos da corrente, os ordena e exibe os dados de Index, \textit{Hash}, \textit{Hash} do bloco anterior, quantidade de tentativas na mineração e as transações contida no bloco, com suas respectivas entradas e saidas de moedas;
+\item Rota POST \texttt{``/add'':} Esta rota é dedicada a receber um arquivo JSON, contendo os dados de remetente, destinatário, valor de entrada e valor de saída de moedas, considerando que a ausência de remetente caracteriza-se como uma transação de base monetária.
+
+\end{itemize}
+
+
+Consta aqui as imagens desta experimentação, o repositório \footnote{\href{https://github.com/HeberUnifil/Educational-Blockchain-Currency}{\textcolor{blue}{https://github.com/HeberUnifil/Educational-Blockchain-Currency}}} onde o código e os arquivos deste teste foram armazenados na plataforma Github por preferência dos autores.
 
 Na Figura \ref*{fig:terminal} consta o registro via terminal Linux das atualizações realizadas na \textit{Blockchain}:
 
@@ -431,7 +438,7 @@ Este projeto de \textit{blockchain}, concebido com foco educacional e explorató
 \subsection*{Considerações Finais}
 Esses trabalhos futuros apresentam um roteiro para a evolução desta arquitetura de blockchain em Rust. O desenvolvimento dessas novas funcionalidades e a pesquisa contínua na área contribuirão para o avanço de novos projetos, permitindo que ultrapassem o ambiente acadêmico e ofereçam soluções inovadoras para desafios do mundo digital. Dessa forma, o projeto não apenas se tornará uma ferramenta educacional sólida para o estudo de economia no contexto da Web 3.0 e das finanças descentralizadas.
 
-Particularmente, eu gostaria de prestar meus agradecimentos ao Professor Marc Antonio Vieira de Queiroz e ao Professor Orientador Mario Henrique Akihiko da Costa Adaniya pela sugestão de conteúdo, suporte e orientação pelo decorrer deste projeto. Dedico este trabalho à minha noiva Lauren e ao leal Grupp. \textbf{Liberdade é um dever}.
+Particularmente, eu gostaria de prestar meus agradecimentos ao Professor Marc Antonio Vieira de Queiroz e ao Professor Orientador Mario Henrique Akihiko da Costa Adaniya pela sugestão de conteúdo, suporte e orientação pelo decorrer deste projeto. Dedico este trabalho à minha noiva Lauren e ao leal Grupp.\\ \textbf{Liberdade é um dever}.
 
 % \end{figure}
 
