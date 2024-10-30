@@ -360,9 +360,9 @@ Seguimos também com as verificações que ocorrem na corrente durante a adiçã
 
 \begin{itemize}
     \item \texttt{MismatchedIndex:} Verificação do posicionamento de blocos na corrente;
-    \item \texttt{InvalidHash:} Verificação dos \textit{Hahes} de cada bloco diante de sua dificuldade;
+    \item \texttt{InvalidHash:} Verificação dos \textit{Hashes} de cada bloco diante de sua dificuldade;
     \item \texttt{AchronologicalTimestamp:} Verificação da marca temporal dos blocos;
-    \item \texttt{MismatchedPreviousHash:} Verificação do apontamento de \textit{Hahes} dos blocos;
+    \item \texttt{MismatchedPreviousHash:} Verificação do apontamento de \textit{Hashes} dos blocos;
     \item \texttt{InvalidGenesisBlockFormat:} Verificação da formatação do bloco primeiro bloco (gênesis da corrente);
     \item \texttt{InvalidInput:} Verificação do apontamento de entrada das transações;
     \item \texttt{InsufficientInputValue:} Verificação da quantidade de moedas apontadas durante a entrada das transações;
@@ -374,7 +374,6 @@ Seguimos também com as verificações que ocorrem na corrente durante a adiçã
 Durante nosso estudo, implementamos o \textit{backend} da nossa aplicação de \textit{blockchain} utilizando a biblioteca Rust Actix Web. Neste sistema implementamos apenas a criação programática da corrente, a exibição geral de dados dos blocos, a exibição detalhada de cada bloco, e a introdução de novos blocos via requisições JSON.
 
 A seguir é apresentado imagens desta experimentação, o repositório \footnote{\href{https://github.com/HeberUnifil/Educational-Blockchain-Currency}{\textcolor{blue}{https://github.com/HeberUnifil/Educational-Blockchain-Currency}}} onde o código e os arquivos deste teste foram armazenados na plataforma Github por preferência dos autores.
-% O código se encontra disponível por este link: \href{https://github.com/HeberUnifil/Educational-Blockchain-Currency}{\textcolor{blue}{https://github.com/HeberUnifil/Educational-Blockchain-Currency}} .
 
 Na Figura \ref*{fig:terminal} consta o registro via terminal Linux das atualizações realizadas na \textit{Blockchain}:
 
@@ -417,7 +416,7 @@ Por fim, atuamos na experimentação educacional da implementação de um sistem
 
 Este projeto de \textit{blockchain}, concebido com foco educacional e exploratório tanto da linguagem de programação Rust quanto da arquitetura de \textit{blockchains}, abriu diversas possibilidades para melhorias e novas direções de desenvolvimento. Destacamos áreas de pesquisa e aprimoramento que poderão expandir as funcionalidades e aplicações práticas dessa arquitetura:
 
-\textbf{Aprimoramento do algoritmo de \textit{Hahes} - }Devido ao viés educativo utilizamos de algoritmos de geração de \textit{Hahes} simplistas. Utilizando poucos atributos das classes em questão resulta a criação de \textit{Hahes} pouco complexos, o que impacta diretamente na flexibilidade da aplicação. Sendo assim abrindo margem para o retrabalho e aprimoramento do mesmo.
+\textbf{Aprimoramento do algoritmo de \textit{Hashes} - }Devido ao viés educativo utilizamos de algoritmos de geração de \textit{Hashes} simplistas. Utilizando poucos atributos das classes em questão resulta a criação de \textit{Hashes} pouco complexos, o que impacta diretamente na flexibilidade da aplicação. Sendo assim abrindo margem para o retrabalho e aprimoramento do mesmo.
 
 \textbf{Otimização e Aprimoramento do Código Rust - }Por conta do caráter exploratório do projeto diante da linguagem de baixo nível, temos uma vasta gama de oportunidade para otimização e correções ao código escrito no nosso projeto. Dada a progressão da maturidade dos autores na linguagem, é esperada a constante manipulação da documentação do código e aprimoramento das estruturas apresentadas previamente. Este projeto exibe a visão de adequação para maior profundidade e semelhança ao algoritmo do \textit{Bitcoin}, de acordo com a especialização dos autores no que se diz respeito a conhecimentos de criptografia, escalabilidade e segurança da informação.
 
