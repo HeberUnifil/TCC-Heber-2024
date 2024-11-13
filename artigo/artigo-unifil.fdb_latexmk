@@ -1,21 +1,21 @@
 # Fdb version 4
-["bibtex artigo-unifil"] 1731522384.14319 "artigo-unifil.aux" "artigo-unifil.bbl" "artigo-unifil" 1731523115.84281 0
+["bibtex artigo-unifil"] 1731522384.14319 "artigo-unifil.aux" "artigo-unifil.bbl" "artigo-unifil" 1731523462.92653 0
   "./bibliografia.bib" 1729984072.15512 9211 c9ce73f26825c91aaebbf284f6d1b59b ""
   "/usr/share/texlive/texmf-dist/bibtex/bib/abntex2/abntex2-options.bib" 1357081713 5396 4eb260dac60f150ae608d45252853090 ""
   "/usr/share/texlive/texmf-dist/bibtex/bst/abntex2/abntex2-alf.bst" 1543183680 60064 0819ac8568f9a482510a46e3a8a6f605 ""
-  "artigo-unifil.aux" 1731523115.31757 9462 475fee31b371e561587f87d426d217d1 "pdflatex"
+  "artigo-unifil.aux" 1731523462.31707 9462 475fee31b371e561587f87d426d217d1 "pdflatex"
   (generated)
   "artigo-unifil.bbl"
   "artigo-unifil.blg"
   (rewritten before read)
-["pdflatex"] 1731523113.60433 "/home/lenhas/repos/edu/TCC/TCC-Heber-2024/artigo/artigo-unifil.tex" "artigo-unifil.pdf" "artigo-unifil" 1731523115.84306 0
+["pdflatex"] 1731523460.49142 "/home/lenhas/repos/edu/TCC/TCC-Heber-2024/artigo/artigo-unifil.tex" "artigo-unifil.pdf" "artigo-unifil" 1731523462.92674 0
   "../images/figura 1.png" 1728131667.95076 116623 fdebde9a88280873b939265f01cd321e ""
   "../images/figura 2.png" 1731514446.20061 85110 47a3435beda9a386a0e6f377b670e11c ""
   "../images/figura 3.png" 1731515715.75386 21395 c792d301f73e5a3c2be76c8e9f20f022 ""
   "../images/navegador-blockchain.png" 1730043235.69422 173005 bb9451a6493f853abd4c212febf568e3 ""
   "../images/terminal-blockchain.png" 1730043575.78216 40520 0fd61ebd17655fbb8fdadfd58a0d4f1b ""
   "/etc/texmf/web2c/texmf.cnf" 1728135275.62444 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/lenhas/repos/edu/TCC/TCC-Heber-2024/artigo/artigo-unifil.tex" 1731523113.31718 55666 eb27f8f3d905c6087cff10fcf835e62c ""
+  "/home/lenhas/repos/edu/TCC/TCC-Heber-2024/artigo/artigo-unifil.tex" 1731523460.15294 55649 3438148be729b6a15c4fdfbe3250dae0 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/helvetic/phvb8r.tfm" 1136768653 4484 b828043cbd581d289d955903c1339981 ""
@@ -275,10 +275,10 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1728135299.37457 5472669 54eaf61a88b6b7896ebd0dac973cb29c ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1728135323 8213363 549277d9a643ee4c1aeae41b175508e9 ""
-  "artigo-unifil.aux" 1731523115.31757 9462 475fee31b371e561587f87d426d217d1 "pdflatex"
+  "artigo-unifil.aux" 1731523462.31707 9462 475fee31b371e561587f87d426d217d1 "pdflatex"
   "artigo-unifil.bbl" 1731522384.26282 5148 dee941acb2a7026648c852f980bfef81 "bibtex artigo-unifil"
-  "artigo-unifil.brf" 1731523115.31757 1721 ee52872dcfb5889f0091cf117d804238 "pdflatex"
-  "artigo-unifil.tex" 1731523113.31718 55666 eb27f8f3d905c6087cff10fcf835e62c ""
+  "artigo-unifil.brf" 1731523462.31707 1721 ee52872dcfb5889f0091cf117d804238 "pdflatex"
+  "artigo-unifil.tex" 1731523460.15294 55649 3438148be729b6a15c4fdfbe3250dae0 ""
   "unifil.cls" 1728131667.95076 5759 c35e915f0db3bdc6b34225b80ed1a3ef ""
   (generated)
   "artigo-unifil.aux"
