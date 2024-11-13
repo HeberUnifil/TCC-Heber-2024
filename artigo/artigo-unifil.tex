@@ -5,6 +5,7 @@
 % IMPORTS
 \usepackage{placeins}
 \usepackage{pgfgantt}
+\usepackage{float}
 
 \DeclareUnicodeCharacter{00A0}{ }
 
@@ -52,7 +53,7 @@ On Cryptoassets}
 
 \fontsize{10}{1}\selectfont
 \section*{Resumo}
-Criptomoedas têm conquistado seu caminho no cenário financeiro global, trazendo uma nova perspectiva na realização de transações econômicas. A ascensão das moedas digitais como o \textit{Bitcoin} e \textit{Ethereum} trouxeram consigo não apenas uma revolução na tecnologia financeira, mas também uma onda de especulação, debate e inovação. No entanto, além do seu potencial como veículo de investimento e meio de troca, o mundo dos criptoativos abre portas também para o aprendizado tanto das ciências econômicas, quanto de algoritmos criptográficos e segurança da infraestrutura de dados. Este artigo apresenta as bases das moedas digitais, suas tecnologias empregadas e seu impacto sobre a economia tradicional. Exploramos também a técnica diante da estrutura do \textit{Bitcoin}, os conceitos de dinheiro sob a visão dos autores presentes na Escola Austríaca de Economia e como a tecnologia aplicada deste criptoativo programaticamente se orienta aos conceitos austríacos de dinheiro. É apresentado por fim um estudo prático, de viés exploratório e educacional, da arquitetura de \textit{Blockchain} do \textit{Bitcoin} utilizando a linguagem de programação Rust.\\
+Criptomoedas têm conquistado seu caminho no cenário financeiro global, trazendo uma nova perspectiva na realização de transações econômicas. A ascensão das moedas digitais como o \textit{Bitcoin} e \textit{Ethereum} trouxeram consigo não apenas uma revolução na tecnologia financeira, mas também uma onda de especulação, debate e inovação. No entanto, além do seu potencial como veículo de investimento e meio de troca, o mundo dos criptoativos abre portas também para o aprendizado tanto das ciências econômicas, quanto de algoritmos criptográficos, segurança e infraestrutura de dados. Este artigo apresenta as bases das moedas digitais, suas tecnologias empregadas e seu impacto sobre a economia tradicional. Além disso é explorada a técnica diante da estrutura do \textit{Bitcoin}, os conceitos de dinheiro sob a visão dos autores presentes na Escola Austríaca de Economia e como a tecnologia aplicada deste criptoativo programaticamente se orienta aos conceitos austríacos de dinheiro. É apresentado por fim um estudo prático, de viés exploratório e educacional, da arquitetura de \textit{Blockchain} do \textit{Bitcoin} utilizando a linguagem de programação Rust.\\
 \vspace{\onelineskip} \\
 \noindent
 \textbf{Palavras-chave}: Tecnologia financeira; Economia; Economia Austríaca; \textit{Blockchain}; \textit{Bitcoin}; Educação financeira; Criptoativos; \textit{DeFi}; Rust.
@@ -61,11 +62,11 @@ Criptomoedas têm conquistado seu caminho no cenário financeiro global, trazend
 \section*{Abstract}
 \begin{otherlanguage*}{english}
 %resumo em ingles%
-Cryptocurrencies have made their way onto the global financial scene, bringing a new perspective to economic transactions. The rise of digital currencies such as Bitcoin and Ethereum has brought with it not only a revolution in financial technology, but also a wave of speculation, debate and innovation. However, in addition to its potential as an investment vehicle and medium of exchange, the world of cryptoassets also opens doors for learning about economic sciences, cryptographic algorithms and data infrastructure security. This article presents the basics of digital currencies, their technologies and their impact on the traditional economy. We also explore the technical structure of Bitcoin, the concepts of money from the point of view of the authors of the Austrian School of Economics and how the applied technology of this crypto-asset is programmatically oriented towards Austrian concepts of money. Finally, a practical, exploratory and educational study of the Blockchain architecture of Bitcoin using the Rust programming language is presented.\\
+Cryptocurrencies have made their way onto the global financial scene, bringing a new perspective to economic transactions. The rise of digital currencies such as Bitcoin and Ethereum has brought with it not only a revolution in financial technology, but also a wave of speculation, debate and innovation. However, in addition to its potential as an investment vehicle and medium of exchange, the world of cryptoassets also opens doors for learning about economic sciences, cryptographic algorithms, security and data infrastructure. This article presents the basics of digital currencies, their technologies and their impact on the traditional economy. Also is explored the technical structure of Bitcoin, the concepts of money from the point of view of the authors of the Austrian School of Economics and how the applied technology of this crypto-asset is programmatically oriented towards Austrian concepts of money. Finally, a practical, exploratory and educational study of the Blockchain architecture of Bitcoin using the Rust programming language is presented.\\
 \vspace{\onelineskip}\\
 \noindent
 \textbf{Keywords}: Financial technology; Economics; Austrian Economics; Blockchain; Bitcoin; Financial education; Cryptoassets; DeFi; Rust.
-\end{otherlanguage*}
+\end{otherlanguage*}{english}
 % \clearpage
 
 %texto%
@@ -78,28 +79,31 @@ Cryptocurrencies have made their way onto the global financial scene, bringing a
 %%%%%%% INTRODUÇÃO %%%%%%%
 \section*{INTRODUÇÃO}
 
-Os criptoativos, também conhecidos como criptomoedas ou moedas digitais, são representações digitais de valor que utilizam criptografia para garantir transações seguras e controlar a criação de novas unidades \cite{Yetmar2023}. Ao contrário das moedas governamentais tradicionais, os criptoativos em geral operam em redes descentralizadas, baseadas em tecnologia de \textit{Blockchain}, onde a validação das transações é realizada pelos próprios participantes da rede através de um consenso distribuído. Este ambiente transparente, seguro e descentralizado existe graças a arquiteturas de \textit{software} complexas e dedicadas ao propósito de escalabilidade, segurança e autonomia do ativo. Diante da versatilidade dos criptoativos, este projeto de pesquisa visa esclarecer o entendimento popular dos criptoativos enquanto expõe uma análise técnica e econômica do mesmo.
-
-Neste projeto, utilizamos o \textit{Bitcoin} como exemplo, verificamos o contexto da criação e aplicação deste ativo, seu posicionamento sobre o dinheiro tradicional e como é possível utilizar do ambiente das criptos para na perspectiva de independência monetária. É apresentado também a tecnologia de encadeamento e rede em que o Bitcoin atua, a \textit{Blockchain}, detalhamos sobre o funcionamento da moeda na assinatura de transações por meio da criptografia de chave pública e privada e a validação de novos blocos por meio da tecnologia Prova de Trabalho, ou \textit{Proof of Work}.
-
-São adotadas neste trabalho as definições de dinheiro, economia e capital da Escola Austríaca de Economia. Detalhamos brevemente os conceitos da ciência financeira, a fim de contextualização técnica da abordagem digital sob a área.
-
-Utilizamos do livro ``\textit{Bitcoin}, A Moeda Na Era Digital'' do mestre brasileiro em economia Fernando Ulrich. Neste livro o autor também revisa o posicionamento da Escola Austríaca de Economia diante do conceito de dinheiro e moeda, traz contexto histórico sobre o desenvolvimento do \textit{Bitcoin} e defende a utilização do criptoativo como moeda de troca legítimo.
-
-
-Por fim, neste projeto, realizamos um estudo da arquitetura apresentada de \textit{Blockchain} do \textit{Bitcoin} utilizando a linguagem de programação Rust. Com viés exploratório e educacional tanto da arquitetura quanto da linguagem de programação, apresentamos os resultados desta experimentação.
-
 % PROBLEMATICA
 
 Embora as criptomoedas tenham ganhado destaque recentemente, a compreensão abrangente de seu estado técnico atual permanece fragmentada, a falta de clareza popular diante do contexto de criptoativos torna o conceito menos palatável à aceitação pública da tecnologia. Embora compreensível a baixa adesão popular a tal tecnologia, é possível estipular melhorias de qualidade de vida diante da população passando despercebidas.
 
 Como conceito, as finanças descentralizadas nasceram visando denunciar as consequências sofridas pela população devido ao mal uso governamental do curso forçado das suas respectivas moedas. A ideia de retirar a manipulação central do dinheiro cria impeditivos físicos ao ativo de sofrer anomalias econômicas como a inflação, por exemplo, visto que o comportamento de escassez da moeda é absoluto (no caso do \textit{Bitcoin}).
 
-De acordo com o mestre em desenvolvimento econômico Pedro Lopes Marinho, em 2001, devido ao início da Primeira Guerra Mundial, o sistema monetário padrão-ouro foi mundialmente abolido enquanto governos financiavam os gastos militares a partir da emissão de moedas. Uma vez que o lastro em metal na moeda foi abandonado, o maior impeditivo a impressão deliberada de dinheiro — e posteriormente inflação — foi deixado de lado.
+De acordo com o mestre em desenvolvimento econômico Pedro Lopes Marinho, em 2001, devido ao início da Primeira Guerra Mundial, o sistema monetário padrão-ouro foi mundialmente abolido enquanto governos financiavam gastos militares a partir da emissão de novas moedas. Uma vez que o lastro em metal na moeda foi abandonado, o maior impeditivo a impressão deliberada de dinheiro — e posteriormente inflação — foi deixado de lado.
 
-A ideia da economia estar sob o controle absoluto governamental implica que todo o trabalho, tempo, esforço e riqueza de uma população está a poucas escolhas de distância de serem descartadas por mal uso estatal da sua moeda.
+A ideia da economia estar sob o controle absoluto governamental implica que todo o trabalho, tempo, esforço e riqueza de uma população estão sob alto risco de serem descartadas por mal uso governamental da sua moeda.
 
 Assim que as finanças descentralizadas tomam seu devido foco. Uma vez oferecendo independência, autonomia, transparência e integridade dos seus protocolos, as moedas digitais podem garantir que o poder e a responsabilidade do dinheiro estão apenas sob quem os detém, seguindo a máxima popular do ambiente cripto ``Minhas chaves, minhas moedas''.
+% FIZ A INVERSÃO DOS PARÁGRAFOS, QUE NEM SOLICITADO
+Os criptoativos, também conhecidos como criptomoedas ou moedas digitais, são representações digitais de valor que utilizam criptografia para garantir transações seguras e controlar a criação de novas unidades \cite{Yetmar2023}. Ao contrário das moedas governamentais tradicionais, os criptoativos em geral operam em redes descentralizadas, baseadas em tecnologia de \textit{Blockchain}, onde a validação das transações é realizada pelos próprios participantes da rede através de um consenso distribuído. Este ambiente transparente, seguro e descentralizado existe graças a arquiteturas de \textit{software} complexas e dedicadas ao propósito de escalabilidade, segurança e autonomia do ativo. Diante da versatilidade dos criptoativos, este projeto de pesquisa visa esclarecer o entendimento popular dos criptoativos enquanto expõe uma análise técnica e econômica do mesmo.
+
+Neste projeto, foi utilizado o \textit{Bitcoin} como exemplo, de modo a verificar o contexto da criação e aplicação deste ativo, seu posicionamento sobre o dinheiro tradicional e como é possível utilizar do ambiente das criptos sob a perspectiva de independência monetária. Além disso é apresentada a tecnologia de encadeamento e rede em que o \textit{Bitcoin} atua, a \textit{Blockchain}, detalhando o funcionamento da moeda na assinatura de transações por meio da criptografia de chave pública e privada e a validação de novos blocos por meio da tecnologia Prova de Trabalho, ou \textit{Proof of Work}.
+
+São adotadas neste trabalho as definições de dinheiro e moeda da Escola Austríaca de Economia. Detalhamos brevemente os conceitos da ciência financeira, evidenciando a abordagem e abstração tecnológica do criptoativo diante da teoria.
+
+
+% a fim de contextualização técnica da abordagem digital sob a área.
+
+% foi utilizado do livro ``\textit{Bitcoin}, A Moeda Na Era Digital'' do mestre brasileiro em economia Fernando Ulrich. Neste livro o autor também revisa o posicionamento da Escola Austríaca de Economia diante do conceito de dinheiro e moeda, traz contexto histórico sobre o desenvolvimento do \textit{Bitcoin} e defende a utilização do criptoativo como moeda de troca legítimo.
+
+
+Por fim, neste projeto, realizamos um estudo da arquitetura apresentada de \textit{Blockchain} do \textit{Bitcoin} utilizando a linguagem de programação Rust. Com viés exploratório e educacional tanto da arquitetura quanto da linguagem de programação, Foi apresentado os resultados desta experimentação.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -111,15 +115,15 @@ Assim que as finanças descentralizadas tomam seu devido foco. Uma vez oferecend
 
 \section*{METODOLOGIA DE PESQUISA}
 % \chapter{Metodologia de Pesquisa}
-A pesquisa foi conduzida inicialmente através de uma extensa revisão sistemática da literatura, diante das revistas acadêmicas ACM, \textit{Semantic Scholar}, IEEE, em busca de artigos apresentando o estado da arte na área de criptoativos. Foram coletados 86 artigos selecionados inicialmente pelas palavras chaves Criptoativos, \textit{Bitcoin}, \textit{Smart Contracts}, \textit{Blockchain}, \textit{DeFi} e \textit{Web 3}. Utilizamos a revisão destes artigos de modo a buscar o estado da arte documentada diante dos criptoativos.
+A pesquisa foi conduzida inicialmente através de uma extensa revisão sistemática da literatura, diante das revistas acadêmicas ACM, \textit{Semantic Scholar}, IEEE, em busca de artigos apresentando o estado da arte na área de criptoativos. Foram coletados 86 artigos selecionados inicialmente pelas palavras-chave: Criptoativos, \textit{Bitcoin}, \textit{Smart Contracts}, \textit{Blockchain}, \textit{DeFi} e \textit{Web 3}. Foi utilizada a revisão destes artigos de modo a buscar o estado da arte documentada diante dos criptoativos.
 
-Após a coleta inicial dos artigos, o primeiro processo de filtragem se passou pela leitura do resumo dos artigos, mantendo apenas os documentos que retratavam a utilização e o impacto socio-econômico dos criptoativos e a exploração do conceito de finanças descentralizadas. Esta primeira filtragem nos retornou 58 registros.
+Após a coleta inicial dos artigos, o primeiro processo de filtragem se passou pela leitura do resumo dos artigos, mantendo apenas os documentos que retratavam a utilização e o impacto socio-econômico dos criptoativos e a exploração do conceito de finanças descentralizadas. Esta primeira filtragem retornou um total de 58 registros.
 
-O segundo processo de filtragem passou-se pela leitura do conteúdo de cada artigo, buscando apenas os relacionamentos dentre os termos técnicos de economia paralelamente ao funcionamento dos ativos digitais. Diante deste processamento de documentação, foi constatada a necessidade da busca bibliográfica de referências da Escola Austríaca de Economia — devido à semelhança de comportamento agnóstico ao estado tanto desta vertente acadêmica quanto das finanças descentralizadas — no que foi considerada busca de literatura de seus principais autores. Esta segunda filtragem nos retornou 7 livros e 27 artigos.
+O segundo processo de filtragem passou-se pela leitura do conteúdo de cada artigo, buscando apenas os relacionamentos dentre os termos técnicos de economia paralelamente ao funcionamento dos ativos digitais. Diante deste processamento de documentação, foi realizada uma busca complementar pelas referências bibliográficas da Escola Austríaca de Economia — devido à semelhança do comportamento agnóstico às instituições governamentais tanto desta vertente acadêmica quanto das finanças descentralizadas — no que foi considerada busca de literatura de seus principais autores. Esta segunda filtragem retornou um total de 7 livros e 27 artigos.
 
-A partir da leitura de toda a documentação coletada, foi registrado o estado da arte e contexto social diante da utilização de criptoativos, dentre seus serviços, propostas e ferramentas. Foi registrada também a atuação técnica da moeda digital mais utilizada atualmente, o \textit{Bitcoin} — Conforme o indexador de criptoativos \href{https://www.coingecko.com/pt}{\textit{CoinGecko}}, acessado 22/05/2024 —, registrado o comportamento do ativo na perspectiva da Escola Austríaca de Economia, verificada a comparação do ativo digital diante do ouro e o papel-moeda e validado como a tecnologia do \textit{Bitcoin} programaticamente se apoia a leitura teórica de economia.
+A partir da leitura de toda a documentação coletada, foi obtido o estado da arte e contexto social diante da utilização de criptoativos, tais como serviços, propostas e ferramentas. Foi registrada também a atuação técnica da moeda digital mais utilizada atualmente, o \textit{Bitcoin} (Conforme o indexador de criptoativos \href{https://www.coingecko.com/pt}{\textit{CoinGecko}}, acessado 22/05/2024), registrado o comportamento do ativo na perspectiva da Escola Austríaca de Economia, verificada a comparação do ativo digital diante do ouro e o papel-moeda e validado como a tecnologia do \textit{Bitcoin} programaticamente se apoia a leitura teórica de economia.
 
-Por fim, foi promovido um estudo exploratório e prático, da arquitetura de \textit{Blockchain} do \textit{Bitcoin}; foram analisadas linguagens de baixo nível, ou seja, mais próximas da linguagem de máquina a fim de reduzir o gasto computacional durante o desenvolvimento e testes; foi escolhida a linguagem de programação Rust e pesquisada diante da sua documentação em conjunto com sua possível aplicação em arquiteturas de encadeamento de blocos; toda a programação foi versionada na plataforma Github e expostas diante desta documentação, abrindo as oportunidades para melhoria e aprimoramento do código em trabalhos futuros.  
+Por fim, foi realizado um estudo exploratório e prático da arquitetura de \textit{Blockchain} do \textit{Bitcoin}, nesta etapa foram analisadas linguagens de baixo nível, ou seja, mais próximas da linguagem de máquina a fim de reduzir o gasto computacional durante o desenvolvimento e testes; foi escolhida a linguagem de programação \textit{Rust} e pesquisada diante da sua documentação em conjunto com sua possível aplicação em arquiteturas de encadeamento de blocos; toda a programação foi versionada na plataforma \textit{Github} e expostas diante desta documentação, abrindo as oportunidades para melhoria e aprimoramento do código em trabalhos futuros.  
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -128,157 +132,175 @@ Por fim, foi promovido um estudo exploratório e prático, da arquitetura de \te
 % \include{./capitulos/cap-estado-arte}
 %%%%%%%%%% ESTADO DA ARTE %%%%%%%%%%
 
-\section*{FUNDAMENTAÇÃO TEÓRICA}
+\section*{ESTADO DA ARTE E CAPITALIZAÇÃO}
 % \chapter{Estado da Arte}
-O estudo dos criptoativos, frequentemente referidos como criptomoedas, emergiu como uma área interdisciplinar que engloba finanças, economia, ciência da computação, direito e outras disciplinas correlatas. O estado da arte nesta área é caracterizado por avanços tecnológicos inovadores, desafios regulatórios complexos, crescente adoção institucional e individual, e um cenário de rápida evolução e inovações contínuas. A seguir constam as principais tecnologias aplicadas ao ambiente das finanças distribuídas brevemente descritas.
+Nakamoto e outros pioneiros destacam que criptoativos, como \textit{Bitcoin} e \textit{Ethereum}, introduzem uma forma de moeda digital descentralizada, que ``elimina a necessidade de intermediários tradicionais'' \cite{nakamoto2008bitcoin}, oferecendo novas alternativas para armazenamento e troca de valor. Esse caráter descentralizado dos criptoativos impulsionou o desenvolvimento de um ecossistema financeiros alternativos, oferecendo maior acessibilidade e transparência em escala global \cite{schar2021defi}. O movimento de descentralização das funções cotidianas acarretam na capitalização de serviços orientados a propriedade do usuário, onde dados e identidades estão sob o controle dos próprios usuários e são armazenados de maneira segura em blockchain. Neste sentido, novas tecnologias foram adotadas diante da implementação das criptomoedas e, tais inovações constam detalhadas nas seções a seguir.
 
 \subsection*{\textit{Blockchain} e Tecnologia de Registro Distribuído (DLT)}
-
-A \textit{blockchain}, a partir da Tecnologia de Registro Distribuído (DLT, do inglês - \textit{Distributed Ledger Technology}), é o alicerce sobre o qual a maioria dos criptoativos é construída. Sua estrutura descentralizada  permite a verificação e registro de transações por uma rede distribuída de nós, assegura características fundamentais como imutabilidade, transparência e resistência à censura \cite{Nakamoto2009}. Além disso, protocolos de consenso como \textit{Proof of Work (PoW)} e \textit{Proof of Stake (PoS)} são cruciais para a segurança e eficiência das redes \textit{blockchain}.
+% CORREÇÃO SOLICITOU UMA REFERENCIA MAIS ATUAL SOBRE A CITAÇÃO DO NAKAMOTO, CONTUDO ESTA CITAÇÃO FOI ESCOLHIDA DEVIDO AO PESO DE SER REFERENTE AO CRIADOR DO MODELO DE BLOCKCHAINS EM SI, TENHO DUVIDAS DE COMO PROCEDER NESTE PONTO
+A \textit{blockchain}é o alicerce sobre o qual a maioria dos criptoativos é construída. Sua estrutura descentralizada  permite a verificação e registro de transações por uma rede distribuída de nós, assegura características fundamentais como imutabilidade, transparência e resistência à censura \cite{Nakamoto2009}. Na fundamentação teórica consta detalhadamente o processo de encadeamento, mineração e adição de novos blocos numa \text{blockchain}.
 
 \subsection*{Contratos Inteligentes}
 
-Contratos inteligentes \textit{(smart contracts)} são programas auto executáveis que operam quando condições predefinidas são atendidas. Introduzidos pela plataforma \textit{Ethereum} \cite{buterin2013ethereum}, esses contratos têm o potencial de automatizar e desintermediar uma vasta gama de transações e processos contratuais, desde serviços financeiros até cadeias de suprimentos. A segurança e a flexibilidade proporcionadas pelos contratos inteligentes incentivam a criação de Aplicações Descentralizadas, que operam em redes \textit{blockchain} sem necessidade de intermediários confiáveis.
+Contratos inteligentes \textit{(smart contracts)} são programas auto executáveis que operam quando condições predefinidas são atendidas. Introduzidos pela plataforma \textit{Ethereum} \cite{buterin2013ethereum}, esses contratos têm o potencial de automatizar e desintermediar uma vasta gama de transações e processos contratuais, desde serviços financeiros até cadeias de suprimentos. A segurança e a flexibilidade proporcionadas pelos contratos inteligentes incentivam a criação de aplicações descentralizadas, que operam em redes \textit{blockchain} sem necessidade de intermediários confiáveis.
 
 \subsection*{Interoperabilidade}
 
-Um dos desafios técnicos significativos é a interoperabilidade entre diferentes blockchains. Projetos como \textit{Polkadot} \cite{wood2016polkadot} e Cosmos \cite{kwon2016cosmos} estão na vanguarda do desenvolvimento de soluções que permitem a comunicação e a interação entre diversas redes \textit{blockchain}. Esta interoperabilidade é essencial para a criação de um ecossistema de criptoativos mais integrado e funcional, onde ativos e informações podem ser transferidos de maneira segura e eficiente entre diferentes plataformas.
+Um dos desafios técnicos significativos é a interoperabilidade entre diferentes blockchains. Projetos como \textit{Polkadot} \cite{wood2016polkadot} e Cosmos \cite{kwon2016cosmos} estão na vanguarda do desenvolvimento de soluções que permitem a comunicação e a interação entre diversas redes \textit{blockchain}. A interoperabilidade é essencial para a criação de um ecossistema de criptoativos mais integrado e funcional, onde ativos e informações podem ser transferidos de maneira segura e eficiente entre diferentes plataformas.
 
-\subsection*{Adoção Pública aos Criptoativos}
+\section*{ACEITAÇÃO PÚBLICA AOS CRIPTOATIVOS}
 
-\textbf{Panorama Governamental} - O cenário regulatório dos criptoativos é altamente diversificado e dinâmico. Países como Suíça e Singapura têm adotado abordagens regulatórias favoráveis, criando ambientes propícios para inovação e atração de investimentos \cite{zohar2015bitcoin}. Em contraste, nações como China e Índia têm implementado restrições rigorosas ao uso e comércio de criptoativos, citando preocupações com a estabilidade financeira e a proteção ao consumidor \cite{auer2018regulating}.
+\subsection*{Panorama Governamental} 
+
+O cenário regulatório dos criptoativos é altamente diversificado e dinâmico. Países como Suíça e Singapura têm adotado abordagens regulatórias favoráveis, criando ambientes propícios para inovação e atração de investimentos \cite{zohar2015bitcoin}. Em contraste, nações como China e Índia têm implementado restrições rigorosas ao uso e comércio de criptoativos, citando preocupações com a estabilidade financeira e a proteção ao consumidor \cite{auer2018regulating}.
 
 Instituições internacionais, como o \textit{Financial Action Task Force (FATF)}, estão desenvolvendo diretrizes para mitigar os riscos associados aos criptoativos, como a lavagem de dinheiro e o financiamento do terrorismo \cite{fatf2019guidance}. A União Europeia, com sua proposta de Regulamento de Mercados de Criptoativos (MiCA), afirma buscar estabelecer um quadro regulamentar abrangente que ofereça proteção aos investidores enquanto promove a inovação no setor \cite{european2020proposal}.
 
-\textbf{Adoção Institucional} - A adoção de criptoativos por instituições financeiras e empresas de grande porte tem crescido substancialmente. Empresas como \textit{Tesla} e \textit{MicroStrategy} têm incorporado Bitcoin em suas estratégias de reserva de tesouraria, sinalizando uma crescente aceitação dos criptoativos como reserva de valor \cite{bouri2017hedge}. Além disso, grandes instituições financeiras estão desenvolvendo produtos de investimento baseados em criptoativos, como fundos negociados em bolsa (ETFs) e contratos futuros.
+\subsection*{Adoção Institucional} 
+A adoção de criptoativos por instituições financeiras e empresas de grande porte tem crescido substancialmente. Empresas como \textit{Tesla} e \textit{MicroStrategy} têm incorporado Bitcoin em suas estratégias de reserva de tesouraria, sinalizando uma crescente aceitação dos criptoativos como reserva de valor \cite{bouri2017hedge}. Além disso, grandes instituições financeiras estão desenvolvendo produtos de investimento baseados em criptoativos, como fundos negociados em bolsa (ETFs) e contratos futuros.
 
-\textbf{Adoção pelo Consumidor} - A adoção de criptoativos por consumidores está aumentando, impulsionada pela facilidade de acesso através de carteiras digitais e plataformas de negociação \cite{kondor2014do}. Serviços de pagamento como \textit{PayPal} e \textit{Square} permitem a compra, venda e uso de criptomoedas, tornando-as mais acessíveis ao público. Esta crescente adoção está ligada à busca por alternativas ao sistema financeiro tradicional e à percepção de criptoativos como uma forma de investimento ou proteção contra a inflação.
+\subsection*{Adoção pelo Consumidor} 
 
-\subsection*{Inovação e Capitalização}
+A adoção de criptoativos por consumidores está aumentando, impulsionada pela facilidade de acesso através de carteiras digitais e plataformas de negociação \cite{kondor2014do}. Serviços de pagamento como \textit{PayPal} e \textit{Square} permitem a compra, venda e uso de criptomoedas, tornando-as mais acessíveis ao público. Esta crescente adoção está ligada à busca por alternativas ao sistema financeiro tradicional e à percepção de criptoativos como uma forma de investimento ou proteção contra a inflação.
 
-Como apontam Nakamoto e outros pioneiros, os criptoativos, como \textit{Bitcoin} e \textit{Ethereum}, introduzem uma forma de moeda digital descentralizada, que ``elimina a necessidade de intermediários tradicionais'' \cite{nakamoto2008bitcoin}, oferecendo novas alternativas para armazenamento e troca de valor. Esse caráter descentralizado dos criptoativos impulsionou o desenvolvimento de sistemas financeiros alternativos, como a \textit{DeFi} (finanças descentralizadas), que visa replicar e expandir os serviços financeiros tradicionais, oferecendo maior acessibilidade e transparência em escala global \cite{schar2021defi}. O movimento de descentralização das funções cotidianas acarretam em serviços orientados à propriedade do usuário, onde dados e identidades estão sob o controle dos próprios usuários e são armazenados de maneira segura em blockchain. Exemplos dessa movimentação são os tokens-não-fungíveis e a \textit{Web 3.0}.
+% \subsection*{Inovação e Capitalização}
 
-\textbf{Finanças Descentralizadas (DeFi)} - O movimento de Finanças Descentralizadas \textit{DeFi} representa uma das áreas mais inovadoras dentro do ecossistema de criptoativos. Plataformas \textit{DeFi} como \textit{Uniswap}, \textit{Aave} e \textit{Compound} permitem a realização de serviços financeiros como empréstimos, trocas e investimentos de maneira descentralizada, sem a necessidade de intermediários tradicionais \cite{zhang2020data}. Esses serviços são executados através de contratos inteligentes, oferecendo maior transparência e acessibilidade.
+% Nakamoto e outros pioneiros destacam que criptoativos, como \textit{Bitcoin} e \textit{Ethereum}, introduzem uma forma de moeda digital descentralizada, que ``elimina a necessidade de intermediários tradicionais'' \cite{nakamoto2008bitcoin}, oferecendo novas alternativas para armazenamento e troca de valor. Esse caráter descentralizado dos criptoativos impulsionou o desenvolvimento de sistemas financeiros alternativos, como a \textit{DeFi} (finanças descentralizadas), que visa replicar e expandir os serviços financeiros tradicionais, oferecendo maior acessibilidade e transparência em escala global \cite{schar2021defi}. O movimento de descentralização das funções cotidianas acarretam em serviços orientados à propriedade do usuário, onde dados e identidades estão sob o controle dos próprios usuários e são armazenados de maneira segura em blockchain. Exemplos dessa movimentação são os tokens-não-fungíveis e a \textit{Web 3.0}.
 
-\textbf{\textit{Tokens} Não Fungíveis (NFTs)} - Os \textit{Tokens} Não Fungíveis (NFTs) emergiram como uma nova classe de ativos digitais que representam a propriedade de itens únicos, como arte digital, música e colecionáveis. A explosão da popularidade dos NFTs em 2021 trouxe atenção significativa para o potencial de \textit{tokenização} de ativos e a criação de mercados digitais \cite{wang2021non}. Esta inovação está transformando a maneira como os direitos de propriedade e a escassez digital são percebidos e geridos.
+% \textbf{Finanças Descentralizadas (DeFi)} - O movimento de Finanças Descentralizadas \textit{DeFi} representa uma das áreas mais inovadoras dentro do ecossistema de criptoativos. Plataformas \textit{DeFi} como \textit{Uniswap}, \textit{Aave} e \textit{Compound} permitem a realização de serviços financeiros como empréstimos, trocas e investimentos de maneira descentralizada, sem a necessidade de intermediários tradicionais \cite{zhang2020data}. Esses serviços são executados através de contratos inteligentes, oferecendo maior transparência e acessibilidade.
 
-\textbf{\textit{Web 3.0}} - A \textit{Web 3.0}, também conhecida como Internet descentralizada, é uma visão que busca redefinir a estrutura da Internet, permitindo maior controle e propriedade de dados pelos usuários. Criptoativos e \textit{Descentralized Apps} são componentes centrais desta visão, proporcionando uma infraestrutura para uma web mais segura, transparente e centrada no usuário \cite{zhang2019secure}.
+% \textbf{\textit{Tokens} Não Fungíveis (NFTs)} - Os \textit{Tokens} Não Fungíveis (NFTs) emergiram como uma nova classe de ativos digitais que representam a propriedade de itens únicos, como arte digital, música e colecionáveis. A explosão da popularidade dos NFTs em 2021 trouxe atenção significativa para o potencial de \textit{tokenização} de ativos e a criação de mercados digitais \cite{wang2021non}. Esta inovação está transformando a maneira como os direitos de propriedade e a escassez digital são percebidos e geridos.
 
-\section*{INCISÃO TEORICA}
+% \textbf{\textit{Web 3.0}} - A \textit{Web 3.0}, também conhecida como Internet descentralizada, é uma visão que busca redefinir a estrutura da Internet, permitindo maior controle e propriedade de dados pelos usuários. Criptoativos e \textit{Descentralized Apps} são componentes centrais desta visão, proporcionando uma infraestrutura para uma web mais segura, transparente e centrada no usuário \cite{zhang2019secure}.
 
-Ao decorrer desta pesquisa utilizamos como modelo de criptoativo o \textit{Bitcoin}, criado pelo pseudônimo Satoshi Nakamoto. Esta moeda é, atualmente, a mais estável diante do mercado de criptoativos e a mais antiga também, percorrendo desde 2008. É manifesto neste trabalho o contexto em que o \textit{Bitcoin} foi criado, seus objetivos diante da população e o detalhamento das tecnologias em que o ativo foi forjado.
+\section*{FUNDAMENTAÇÃO TEÓRICA}
 
-Diante da tecnologia empregada no \textit{Bitcoin}, neste projeto é evidenciado os pilares principais em que se apoiam o desenvolvimento das criptomoedas, definido o trilema das criptos e como este trilema impacta na execução das suas determinadas funções.
+Ao decorrer desta pesquisa foi utilizado como modelo de criptoativo o \textit{Bitcoin}. Diante da tecnologia empregada no \textit{Bitcoin}, a seguir consta evidenciada a funcionalidade, a motivação para que o sistema foi desenvolvido e o detalhamento técnico das suas partes.
 
-Será apresentado também o conceito de \textit{DeFi} — Sigla para Finanças Descentralizadas em inglês — e como este ecossistema tecnológico pode prover maior qualidade de vida e serviços para seus usuários.
+Este projeto utilizou dos autores da Escola Austríaca de Economia Böm Bawerk, Carl Menger e Friedrich Hayek, Ludwig von Mises, junto com a incisão do economista Fernando Ulrich para buscar uma definição de dinheiro e moeda. Por fim é verificado o quão bem a tecnologia embarcada do \textit{Bitcoin} cumpre seu papel de moeda em comparação com o ouro e com o papel-moeda. 
 
-Este projeto utiliza dos autores da Escola Austríaca de Economia — Ludwig von Mises, Böm Bawerk, Carl Menger, Friedrich Hayek e Murray Rothbard — para induzir a definição de dinheiro e moeda, pois, com foco na definição do conceito de dinheiro é possível argumentar o quão bem uma criptomoeda cumpre este papel em comparação com a moeda de curso legal do estado.
+\subsection*{Detalhamento Técnico do \textit{Bitcoin}} \label{sec:bitcoin}
 
-\subsection*{O \textit{Bitcoin}} \label{sec:bitcoin}
+O \textit{Bitcoin} nasceu como um modelo de dinheiro digital que opera em uma rede descentralizada, sem a necessidade de uma autoridade central para emitir ou controlar a moeda. Foi proposto pela primeira vez em 2008 pelo programador anônimo conhecido pelo pseudônimo Satoshi Nakamoto, na documentação \textit{``Bitcoin: A Peer-to-Peer Electronic Cash System''} \cite{Nakamoto2009} ,e lançado como \textit{software} de código aberto em 2009. O \textit{Bitcoin} permite transações \textit{peer-to-peer} — de pessoa para pessoa e/ou ponto a ponto —, nas quais usuários podem enviar e receber pagamentos diretamente, sem a necessidade de intermediários.
 
-O \textit{Bitcoin} nasceu como um modelo de dinheiro digital que opera em uma rede descentralizada, sem a necessidade de uma autoridade central para emitir ou controlar a moeda. Foi proposto pela primeira vez em 2008 pelo programador anônimo conhecido pelo pseudônimo Satoshi Nakamoto, na documentação \textit{``Bitcoin: A Peer-to-Peer Electronic Cash System''} \cite{Nakamoto2009} ,e lançado como \textit{software} de código aberto em 2009. O \textit{Bitcoin} permite transações \textit{peer-to-peer} — de pessoa para pessoa e/ou ponto a ponto —, nas quais os usuários podem enviar e receber pagamentos diretamente, sem a necessidade de intermediários.
+Este criptoativo é reconhecido por ser o primeiro e mais estável projeto de moeda digital e é definitivamente visto como referência de segurança, escalabilidade e descentralização no ambiente cripto. Posteriormente há uma melhor definição da tecnologia de registro em que o Bitcoin atua.
 
-Este criptoativo é reconhecido por ser o primeiro e mais estável projeto de moeda digital e é definitivamente visto como referência de segurança, escalabilidade e descentralização no ambiente cripto. Posteriormente há uma melhor definição da tecnologia de registro em que o Bitcoin atua, a \textit{Blockchain}.
+\textbf{A Blockchain} \label{subsec:blockchain} - A tecnologia fundamental que sustenta o \textit{Bitcoin} é a \textit{Blockchain}, um livro-razão digital público e distribuído que registra todas as transações de forma transparente e imutável. A \textit{Blockchain} é composta por blocos encadeados de forma cronológica, ao passo que toda adição à corrente é seguida da replicação e constante validação dos usuários da rede.
 
-\subsection*{A Blockchain} \label{subsec:blockchain}
+\textbf{O Bloco} - De maneira simplificada, estrutura do bloco contém primeiramente os dados de \textit{header} do bloco, dados que são utilizados para a geração do \textit{hash} do bloco, como o \textit{hash} do bloco anterior, a marca de tempo da criação do bloco e o número de tentativas de mineração. Em seguida, o bloco armazena as transações já confirmadas numa lista cronológica. Na Figura \ref*{fig:blockchain} é exibido uma representação gráfica do encadeamento de blocos e seus dados diante da \textit{Blockchain} formando a estrutura e formato da cadeia.
 
-A tecnologia fundamental que sustenta o \textit{Bitcoin} é a \textit{Blockchain}, um livro-razão digital público e distribuído que registra todas as transações de forma transparente e imutável. A \textit{Blockchain} é composta por blocos encadeados de forma cronológica. De maneira recursiva, cada bloco contém um conjunto — por ordem temporal — de transações confirmadas de maneira encadeada e um cabeçalho que inclui um \textit{hash} do bloco anterior, formando assim uma cadeia de blocos interligados.
-
-Na Figura \ref*{fig:blockchain} exibimos uma abstração do encadeamento de blocos e seus dados diante da \textit{Blockchain} formando a estrutura e formato da cadeia.
-
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering
+	\captionsetup{justification=centering}
 	\caption{Estrutura de encadeamento de blocos numa \textit{blockchain}.}
 	\includegraphics[width=.8\linewidth]{../images/figura 2.png}
 	\label{fig:blockchain}
 	\text{Fonte: Tradução pelos autores, baseado na documentação de referência \cite{Nakamoto2009}}
 \end{figure}
 
-Na Figura \ref*{fig:transactions} exibimos uma abstração das transações, onde a transação anterior valida a realização da subsequente, assim dando lastro a cada transação efetuada entre os blocos.
 
-\begin{figure}[h]
+\textbf{As Transações} - A classe de transação do \textit{Bitcoin} armazena da chave criptográfica pública do dono atual das moedas e da assinatura criptográfica do dono anterior, no intuito de impedir que um usuário gaste moedas que não recebeu, dando lastro às trocas. Durante a adição das transações aos blocos, é verificado recursivamente se o lastro de cada troca não foi utilizado previamente, evitando que um usuário gaste mais de uma vez as moedas que recebeu. Na Figura \ref*{fig:transactions} é exibido uma abstração das transações, onde a transação anterior valida a realização da subsequente, assim dando histórico a cada transação efetuada entre os blocos.
+
+\begin{figure}[H]
 	\centering
-	\caption{Encadeamento das transações entre os blocos.}
+	\captionsetup{justification=centering}
+	\caption{Encadeamento dos lastro das transações entre os blocos.}
 	\includegraphics[width=.8\linewidth]{../images/figura 1.png}
 	\label{fig:transactions}
 	\text{Fonte: Tradução pelos autores, baseado na documentação de referência \cite{Nakamoto2009}}
 
 \end{figure}
 
-\subsection*{Criptografia SHA-256 (\textit{Secure Hash Algorithm 256-bit})} \label{subsec:sha256}
+Para evitar a necessidade de realizar uma transação separada para cada fração de valor, as transações permitem que o montante seja dividido e combinado conforme necessário. Assim, as transações podem conter várias entradas e saídas. Em geral, há uma única entrada, originada de uma transação anterior de valor maior, ou várias entradas que somam valores menores. Quanto às saídas, geralmente há duas: uma para o destinatário do pagamento e, se houver excedente, outra para devolver o troco ao remetente. É importante salientar que a representação de entrada, performativamente é sempre o objeto de saída da transação de lastro anterior, como explicado no parágrafo anterior. Na Figura \ref*{fig:input} é exibido uma representação gráfica do processo de entradas e saídas das transações.
 
-O protocolo do \textit{Bitcoin} emprega a criptografia SHA-256 (\textit{Secure Hash Algorithm 256-bit}) como um componente fundamental para garantir a integridade e a segurança das transações na rede. Este algoritmo de \textit{hash} criptográfico, desenvolvido pela Agência Nacional de Segurança (NSA) dos Estados Unidos e publicado pelo Instituto Nacional de Padrões e Tecnologia (NIST), é crucial para diversas operações no ecossistema Bitcoin.
+\begin{figure}[H]
+	\centering
+	\captionsetup{justification=centering}
+	\caption{Processo de entradas e saídas nas transações.}
+	\includegraphics[width=.8\linewidth]{../images/figura 3.png}
+	\label{fig:input}
+	\text{Fonte: Tradução pelos autores, baseado na documentação de referência \cite{Nakamoto2009}}
 
-O SHA-256 contribui para a segurança geral do protocolo Bitcoin por ser resistente a ataques de colisão e de pré-imagem, o que significa ser computacionalmente impraticável encontrar duas mensagens distintas que resultem no mesmo \textit{hash} ou reverter um \textit{hash} para obter a mensagem original. Essas propriedades são essenciais para manter a integridade das chaves e transações, garantindo que as entradas não possam ser manipuladas sem que seja facilmente detectado pela rede.
+\end{figure}
 
-\subsection*{Algoritmo de Prova de Trabalho e Mineiração} \label{subsec:pow}
+\textbf{Criptografia utilizada, SHA-256 (\textit{Secure Hash Algorithm 256-bit})} - O protocolo do \textit{Bitcoin} emprega a criptografia SHA-256 (\textit{Secure Hash Algorithm 256-bit}) como um componente fundamental para garantir a integridade e a segurança das transações na rede. O SHA-256 contribui para a segurança geral do protocolo por ser resistente a ataques de colisão e de pré-imagem, o que significa ser computacionalmente impraticável encontrar duas mensagens distintas que resultem no mesmo \textit{hash} ou reverter um \textit{hash} para obter a mensagem original. Essas propriedades são essenciais para manter a integridade das chaves e transações, garantindo que as entradas não possam ser manipuladas sem que seja facilmente detectado pela rede.
 
-Para garantir a segurança e a integridade da \textit{Blockchain}, o \textit{Bitcoin} utiliza um algoritmo de consenso chamado Prova de Trabalho (também chamado, do inglês, de \textit{Proof of Work} ou PoW). Os mineradores coletam transações pendentes em um bloco e tentam gerar um \textit{hash} válido para esse bloco usando o SHA-256.
+\textbf{Algoritmo de Prova de Trabalho e Mineração} - O \textit{Bitcoin} utiliza um algoritmo de consenso chamado Prova de Trabalho (também chamado, do inglês, de \textit{Proof of Work} ou PoW). Os mineradores coletam transações pendentes em um bloco e tentam gerar um \textit{hash} válido para esse bloco usando o SHA-256.
 
-A prova de trabalho se orienta dentro da \textit{blockchain} diante do protocolo Merkle. O protocolo Merkle, também referido como árvore de Merkle ou \textit{hash} de Merkle, é uma estrutura de dados fundamental em criptografia, criada por Ralph Merkle. A árvore de Merkle ajuda a garantir que os dados não foram alterados, pois, qualquer modificação nos dados de entrada alteraria o \textit{hash} na folha correspondente e, por sua vez, todos os \textit{hashes} no caminho até a raiz.
+A prova de trabalho se orienta dentro da \textit{blockchain} diante do protocolo \textit{Merkle}. O protocolo \textit{Merkle}, também referido como árvore de \textit{Merkle} ou \textit{hash} de \textit{Merkle}, é uma estrutura de dados fundamental em criptografia, criada por Ralph \textit{Merkle}. A árvore de \textit{Merkle} ajuda a garantir que os dados não foram alterados, pois, qualquer modificação nos dados de entrada alteraria o \textit{hash} na folha correspondente e, por sua vez, todos os \textit{hashes} no caminho até a raiz.
 
-O algoritmo é aplicado duas vezes (conhecido como \textit{double-SHA-256}) ao cabeçalho do bloco, que inclui a versão do programa, o \textit{hash} do bloco anterior, o \textit{hash} Merkle das transações no bloco, o \textit{timestamp}, o nível de dificuldade e um \textit{nonce}. O termo \textit{nonce} refere-se a um número que é usado apenas uma vez (do inglês \textit{number used once}). O \textit{nonce} é um valor inteiro de 32 bits que os mineradores ajustam repetidamente para tentar produzir um \textit{hash} do bloco que atenda aos critérios de dificuldade estabelecidos pela rede Bitcoin.
+O algoritmo é aplicado duas vezes (conhecido como \textit{double-SHA-256}) ao cabeçalho do bloco, que, de maneira mais detalhada, inclui a versão do programa, o \textit{hash} do bloco anterior, o \textit{hash} \textit{Merkle} das transações no bloco, o \textit{timestamp}, o nível de dificuldade e um \textit{nonce}. O termo \textit{nonce} refere-se a um número que é usado apenas uma vez (do inglês \textit{number used once}). O \textit{nonce} é um valor inteiro de 32 bits que os mineradores ajustam repetidamente para tentar produzir um \textit{hash} do bloco que atenda aos critérios de dificuldade estabelecidos pela rede Bitcoin.
 
 O objetivo é encontrar um \textit{hash} que seja menor que o valor de dificuldade estabelecido pela rede, o que exige que os mineradores ajustem o \textit{nonce} repetidamente e recalculam o \textit{hash} do bloco até que um valor adequado seja encontrado. Este processo é fundamental para a implementação da prova de trabalho (\textit{Proof of Work} - PoW), que ajuda a proteger a rede contra ataques.
 
 % \clearpage
-\subsection*{A Escola Austríaca de Economia} \label{sec:austriaca}
+% \subsection*{A Escola Austríaca de Economia} \label{sec:austriaca}
 
-A Escola Austríaca de Economia, emergida no final do século XIX, representa uma tradição heterodoxa significativa no pensamento econômico. Caracterizada por sua ênfase na teoria subjetiva do valor, na praxeologia e no papel crucial do empreendedorismo, a Escola Austríaca oferece uma perspectiva única que contrasta com as abordagens neoclássicas e keynesianas dominantes.
+% A Escola Austríaca de Economia, emergida no final do século XIX, representa uma tradição heterodoxa significativa no pensamento econômico. Caracterizada por sua ênfase na teoria subjetiva do valor, na praxeologia e no papel crucial do empreendedorismo, a Escola Austríaca oferece uma perspectiva única que contrasta com as abordagens neoclássicas e keynesianas dominantes.
 
-A seguir consta a história, cronologia, os principais autores e pautas centrais desta escola, destacando suas contribuições teóricas e influências duradouras. É constatado também definições por parte destes autores diante dos conceitos, respectivamente, de economia, capital e dinheiro
+% A seguir consta a história, cronologia, os principais autores e pautas centrais desta escola, destacando suas contribuições teóricas e influências duradouras. É constatado também definições por parte destes autores diante dos conceitos, respectivamente, de economia, capital e dinheiro
 
-A Escola Austríaca de Economia foi fundada por Carl Menger com a publicação de \textit{``Principles of Economics''} (1871). Seu trabalho desafiou a teoria do valor-trabalho dos economistas clássicos e introduziu a teoria marginalista do valor.
+% A Escola Austríaca de Economia foi fundada por Carl Menger com a publicação de \textit{``Principles of Economics''} (1871). Seu trabalho desafiou a teoria do valor-trabalho dos economistas clássicos e introduziu a teoria marginalista do valor.
 
-\textbf{Carl Menger (1840-1921)} - Em \textit{``Principles of Economics''}, \cite{menger1871principles} argumentou que o valor dos bens é determinado pela utilidade marginal que os indivíduos o atribuem, estabelecendo as bases para a análise econômica subjetiva.
+% \textbf{Carl Menger (1840-1921)} - Em \textit{``Principles of Economics''}, \cite{menger1871principles} argumentou que o valor dos bens é determinado pela utilidade marginal que os indivíduos o atribuem, estabelecendo as bases para a análise econômica subjetiva.
 
-\textbf{Eugen von Böhm-Bawerk (1851-1914)} - Discípulo de Menger, Böhm-Bawerk contribuiu significativamente para a teoria do capital e dos juros. Em \textit{``Capital and Interest''}, ele desenvolveu a teoria da estrutura temporal da produção, enfatizando a importância do tempo no processo produtivo \cite{bohm1884capital}.
+% \textbf{Eugen von Böhm-Bawerk (1851-1914)} - Discípulo de Menger, Böhm-Bawerk contribuiu significativamente para a teoria do capital e dos juros. Em \textit{``Capital and Interest''}, ele desenvolveu a teoria da estrutura temporal da produção, enfatizando a importância do tempo no processo produtivo \cite{bohm1884capital}.
 
-\textbf{Desenvolvimento e Consolidação} -
-No início do século XX, Ludwig von Mises e Friedrich Hayek ampliaram e consolidaram as ideias da Escola Austríaca, influenciando significativamente o pensamento econômico.
+% \textbf{Desenvolvimento e Consolidação} -
+% No início do século XX, Ludwig von Mises e Friedrich Hayek ampliaram e consolidaram as ideias da Escola Austríaca, influenciando significativamente o pensamento econômico.
 
-\textbf{Ludwig von Mises (1881-1973)} - Mises é uma figura central na Escola Austríaca. Em \textit{``Human Action''}, ele propôs que a economia deve ser baseada na lógica dedutiva da ação humana, uma abordagem chamada praxeologia. Mises também desenvolveu a teoria do ciclo econômico, que analisa as flutuações econômicas causadas pela expansão do crédito e pela intervenção estatal no mercado monetário \cite{mises1949human}.
+% \textbf{Ludwig von Mises (1881-1973)} - Mises é uma figura central na Escola Austríaca. Em \textit{``Human Action''}, ele propôs que a economia deve ser baseada na lógica dedutiva da ação humana, uma abordagem chamada praxeologia. Mises também desenvolveu a teoria do ciclo econômico, que analisa as flutuações econômicas causadas pela expansão do crédito e pela intervenção estatal no mercado monetário \cite{mises1949human}.
 
-\textbf{Friedrich Hayek (1899-1992)} - Discípulo de Mises, Hayek contribuiu para a teoria do capital e o estudo dos ciclos econômicos. Em \textit{"The Road to Serfdom"} e \textit{"The Constitution of Liberty"}, Hayek criticou o intervencionismo estatal e defendeu uma ordem espontânea de mercado. Em 1974, ele recebeu o Prêmio Nobel de Economia por seu trabalho sobre a teoria monetária e as flutuações econômicas \cite{hayek1944road},\cite{hayek1960constitution}.
+% \textbf{Friedrich Hayek (1899-1992)} - Discípulo de Mises, Hayek contribuiu para a teoria do capital e o estudo dos ciclos econômicos. Em \textit{"The Road to Serfdom"} e \textit{"The Constitution of Liberty"}, Hayek criticou o intervencionismo estatal e defendeu uma ordem espontânea de mercado. Em 1974, ele recebeu o Prêmio Nobel de Economia por seu trabalho sobre a teoria monetária e as flutuações econômicas \cite{hayek1944road},\cite{hayek1960constitution}.
 
-\textbf{Pautas e Contribuições} A seguir consta as principais pautas da Escola Austríaca onde servirá de base para o relacionamento dos conceitos fundamentais de economia, dinheiro e capital.
+% \textbf{Pautas e Contribuições} A seguir consta as principais pautas da Escola Austríaca onde servirá de base para o relacionamento dos conceitos fundamentais de economia, dinheiro e capital.
 
-\textbf{Teoria do Valor Subjetivo} -
-A teoria do valor subjetivo é uma contribuição fundamental da Escola Austríaca. Ela afirma que o valor dos bens é determinado pela utilidade marginal atribuída pelos indivíduos, contrastando com a teoria do valor-trabalho \cite{menger1871principles}.
+% \textbf{Teoria do Valor Subjetivo} -
+% A teoria do valor subjetivo é uma contribuição fundamental da Escola Austríaca. Ela afirma que o valor dos bens é determinado pela utilidade marginal atribuída pelos indivíduos, contrastando com a teoria do valor-trabalho \cite{menger1871principles}.
 
-\textbf{Praxeologia} -
-A praxeologia é a metodologia central da Escola Austríaca. Baseia-se na premissa de que a economia é uma ciência social que deve ser estudada através da análise lógica da ação humana, ao invés de métodos empíricos e estatísticos \cite{mises1949human}.
+% \textbf{Praxeologia} -
+% A praxeologia é a metodologia central da Escola Austríaca. Baseia-se na premissa de que a economia é uma ciência social que deve ser estudada através da análise lógica da ação humana, ao invés de métodos empíricos e estatísticos \cite{mises1949human}.
 
-\textbf{Teoria do Ciclo Econômico e Crítica ao Intervencionismo Estatal} -
-A Teoria Austríaca dos Ciclos Econômicos, desenvolvida por Mises e Hayek, explica as flutuações econômicas como resultado das distorções causadas pela expansão do crédito e pela intervenção governamental. Segundo esta teoria, a criação artificial de crédito leva a um mau investimento de recursos, resultando em ciclos de \textit{boom} e \textit{bust} \cite{mises1949human,hayek1944road}.
-De natureza fortemente crítica ao intervencionismo estatal e ao planejamento centralizado, economistas austríacos argumentam que a intervenção governamental distorce os sinais de preço, leva a alocações ineficientes de recursos e restringe a liberdade individual. Hayek argumentou que o planejamento centralizado é incapaz de lidar com a complexidade da informação distribuída na sociedade \cite{hayek1944road,hayek1960constitution}.
+% \textbf{Teoria do Ciclo Econômico e Crítica ao Intervencionismo Estatal} -
+% A Teoria Austríaca dos Ciclos Econômicos, desenvolvida por Mises e Hayek, explica as flutuações econômicas como resultado das distorções causadas pela expansão do crédito e pela intervenção governamental. Segundo esta teoria, a criação artificial de crédito leva a um mau investimento de recursos, resultando em ciclos de \textit{boom} e \textit{bust} \cite{mises1949human,hayek1944road}.
+% De natureza fortemente crítica ao intervencionismo estatal e ao planejamento centralizado, economistas austríacos argumentam que a intervenção governamental distorce os sinais de preço, leva a alocações ineficientes de recursos e restringe a liberdade individual. Hayek argumentou que o planejamento centralizado é incapaz de lidar com a complexidade da informação distribuída na sociedade \cite{hayek1944road,hayek1960constitution}.
 
-\textbf{Definição conceitual de maior incisão no projeto} -
-Consta aqui definições por parte dos autores austríacos diante dos conceitos de base da atuação deste artigo. A partir desta conceitualização é possível observar diante da atuação dos criptoativos e futuramente estipular as necessidades de um sistema de moedas digitais, dedicado ao ensino de finanças.
+% \textbf{Definição conceitual de maior incisão no projeto} -
+% Consta aqui definições por parte dos autores austríacos diante dos conceitos de base da atuação deste artigo. A partir desta conceitualização é possível observar diante da atuação dos criptoativos e futuramente estipular as necessidades de um sistema de moedas digitais, dedicado ao ensino de finanças.
 
-\textbf{Economia e a Ação Humana} - Ludwig von Mises, em "Ação Humana"\cite{mises1949human}, define economia como "a ciência que estuda a ação humana, uma aplicação da teoria do conhecimento humano". Segundo Mises, a economia é um ramo da praxeologia, ou seja, a teoria da ação humana. Ele argumenta que a economia, ao contrário de ser meramente uma análise de dados e tendências, é fundamentalmente sobre como os indivíduos escolhem agir com recursos escassos para atingir seus objetivos.
+% \textbf{Economia e a Ação Humana} - Ludwig von Mises, em "Ação Humana"\cite{mises1949human}, define economia como "a ciência que estuda a ação humana, uma aplicação da teoria do conhecimento humano". Segundo Mises, a economia é um ramo da praxeologia, ou seja, a teoria da ação humana. Ele argumenta que a economia, ao contrário de ser meramente uma análise de dados e tendências, é fundamentalmente sobre como os indivíduos escolhem agir com recursos escassos para atingir seus objetivos.
 
-\textbf{Capital segundo Böhm-Bawerk} - Eugen Böhm von Bawerk, contribuiu significativamente para a teoria do capital. Em sua obra \textit{"Capital and Interest"}\cite{bohm1884capital}, Böhm-Bawerk descreve o capital como "bens produzidos que servem como meios para a aquisição de bens futuros" \cite{bohm1884capital}. Ele esclarece que o capital não é simplesmente uma acumulação de dinheiro ou ativos, mas sim ferramentas, máquinas e materiais usados para aumentar a produção futura.
+% \textbf{Capital segundo Böhm-Bawerk} - Eugen Böhm von Bawerk, contribuiu significativamente para a teoria do capital. Em sua obra \textit{"Capital and Interest"}\cite{bohm1884capital}, Böhm-Bawerk descreve o capital como "bens produzidos que servem como meios para a aquisição de bens futuros" \cite{bohm1884capital}. Ele esclarece que o capital não é simplesmente uma acumulação de dinheiro ou ativos, mas sim ferramentas, máquinas e materiais usados para aumentar a produção futura.
 
-\textbf{Dinheiro e sua Origem para Menger} - Carl Menger, foi um dos primeiros economistas a explicar a origem do dinheiro através de um processo de evolução social e não por decreto governamental ou convenção. Em sua obra "Princípios de Economia Política" \cite{menger2017liberalismo}, Menger argumentou que o dinheiro emergiu organicamente como o meio mais vendável de troca, facilitando assim as transações comerciais e reduzindo os custos de transação na economia \cite{menger1871principles}.
+% \textbf{Dinheiro e sua Origem para Menger} - Carl Menger, foi um dos primeiros economistas a explicar a origem do dinheiro através de um processo de evolução social e não por decreto governamental ou convenção. Em sua obra "Princípios de Economia Política" \cite{menger2017liberalismo}, Menger argumentou que o dinheiro emergiu organicamente como o meio mais vendável de troca, facilitando assim as transações comerciais e reduzindo os custos de transação na economia \cite{menger1871principles}.
 
-\textbf{A Teoria do Dinheiro de Mises} - Ludwig von Mises expandiu a teoria de Menger ao introduzir o conceito de "regressão" em sua análise do valor do dinheiro. Em "A Teoria do Dinheiro e do Crédito" \cite{von2013theory}, Mises apresenta a ideia de que o valor do dinheiro hoje é derivado da expectativa de seu poder de compra no futuro, que por sua vez é baseado em uma regressão contínua até o ponto em que o dinheiro era apenas um bem mais vendável entre outros \cite{von2013theory}. Mises também destacou o papel do dinheiro no cálculo econômico, essencial para a alocação racional de recursos em uma economia de mercado.
+% \textbf{A Teoria do Dinheiro de Mises} - Ludwig von Mises expandiu a teoria de Menger ao introduzir o conceito de "regressão" em sua análise do valor do dinheiro. Em "A Teoria do Dinheiro e do Crédito" \cite{von2013theory}, Mises apresenta a ideia de que o valor do dinheiro hoje é derivado da expectativa de seu poder de compra no futuro, que por sua vez é baseado em uma regressão contínua até o ponto em que o dinheiro era apenas um bem mais vendável entre outros \cite{von2013theory}. Mises também destacou o papel do dinheiro no cálculo econômico, essencial para a alocação racional de recursos em uma economia de mercado.
 
-\textbf{Hayek e a Desestatização do Dinheiro} - Friedrich Hayek, levou a teoria monetária austríaca para outra direção ao argumentar a favor da competição de moedas privadas em sua obra "Desnacionalização do Dinheiro" \cite{hayek2017desestatizaccao}. Hayek criticou os monopólios governamentais sobre a emissão de dinheiro, propondo que a concorrência entre diferentes categorias de dinheiro poderia prevenir a inflação e promover a estabilidade econômica.
+% \textbf{Hayek e a Desestatização do Dinheiro} - Friedrich Hayek, levou a teoria monetária austríaca para outra direção ao argumentar a favor da competição de moedas privadas em sua obra "Desnacionalização do Dinheiro" \cite{hayek2017desestatizaccao}. Hayek criticou os monopólios governamentais sobre a emissão de dinheiro, propondo que a concorrência entre diferentes categorias de dinheiro poderia prevenir a inflação e promover a estabilidade econômica.
 
 \section*{A TECNOLOGIA DO \textit{BITCOIN} COMO DINHEIRO} \label{sec:dinheiro}
-Resumiremos o conteúdo do livro ``\textit{Bitcoin}, a moeda na era digital'' escrito por Fernando Ulrich. O brasileiro é Mestre em Economia e referência por seu pioneirismo na divulgação de criptomoedas no Brasil.
+A partir da literatura da Escola Austríaca de Economia e do resumo apresentado no livro ``\textit{Bitcoin}, a moeda na era digital'' escrito por Fernando Ulrich, é possível induzir a definição de moeda como \textbf{"qualquer bem econômico empregado indefinidamente como meio de troca, independentemente de sua liquidez frente a outros bens monetários e de seus possíveis usos alternativos"} \cite[P.89]{Ulrich2014}. 
 
-\subsection*{A Definição de Ulrich de Dinheiro e Moeda}
+Em "A Teoria do Dinheiro e do Crédito" \cite{von2013theory}, Mises apresenta a ideia de que o valor do dinheiro hoje é derivado da expectativa de seu poder de compra no futuro, que por sua vez é baseado em uma regressão contínua até o ponto em que o dinheiro era apenas um bem mais vendável entre outros \cite{von2013theory}. 
 
-Em seu livro, Ulrich chega a definição de moeda como "qualquer bem econômico empregado indefinidamente como meio de troca, independentemente de sua liquidez frente a outros bens monetários e de seus possíveis usos alternativos" \cite[P.89]{Ulrich2014}.
+A partir do livro \textit{"Capital and Interest"}\cite{bohm1884capital}, Bawerk descreve o capital como "bens produzidos que servem como meios para a aquisição de bens futuros". esclarecendo que o capital não é simplesmente uma acumulação de dinheiro ou ativos, mas sim ferramentas, máquinas e materiais usados para aumentar a produção futura.
 
-O autor lista atributos característicos a moeda, sendo eles sua escassez,
-durabilidade, homogeneidade espacial e temporal, divisibilidade e maleabilidade, comparando o desempenho destes atributos diante do papel-moeda, o ouro e o Bitcoin, como mostra na Tabela \ref*{tab:atributos}.
+De modo mais incisivo, Ulrich lista atributos característicos a moeda e a dependência de terceiros fiduciários, como mostra na Tabela \ref*{tab:atributos}, e compara a capacidade performática do ouro, do papel-moeda e do \textit{Bitcoin}.
+Sendo os atributos do dinheiro:
+\begin{itemize}
+    \item \textbf{Durabilidade:} Capacidade de resistência ao tempo;
+    \item \textbf{Divisibilidade:} Capacidade de fracionamento;
+    \item \textbf{Maleabilidade:} Capacidade de transferência;
+    \item \textbf{Homogeneidade:} Capacidade de representação de valor equivalente;
+    \item \textbf{Oferta(Escassez):} Incapacidade de ser duplicável;
+    \item \textbf{Dependência de terceiros fiduciários:} O quão dependente o usuário é de um ator terceiro;
+
+\end{itemize}
 
 \FloatBarrier
 \begin{table}[h]
     \centering
+	\captionsetup{justification=centering}
 	\caption{Comparação dos atributos do dinheiro diante do ouro, do papel-moeda e do \textit{Bitcoin}}.
 	\begin{tabular}{|c|c|c|c|}
 
@@ -293,12 +315,11 @@ durabilidade, homogeneidade espacial e temporal, divisibilidade e maleabilidade,
 		\begin{tabular}[c]{@{}c@{}}6.Dependência de \\ terceiros fiduciários\end{tabular} & Alta                                                              & Alta                                                                              & \begin{tabular}[c]{@{}c@{}}Baixa ou \\ quase nula\end{tabular}      \\ \hline
 	\end{tabular}
     \label{tab:atributos}
-	
-	\text{Fonte: ``\textit{Bitcoin}, a moeda na era digital''\cite{Ulrich2014}}
 \end{table}
+\centerline{Fonte: ``\textit{Bitcoin}, a moeda na era digital''\cite{Ulrich2014}}
 \FloatBarrier
 
-Ulrich menciona também as funções do dinheiro, listadas de servir como meio de troca, reserva de valor e unidade de conta. Em outras palavras, uma moeda deve servir, respectivamente, de maneira que as suas trocas sejam de forma facilitada; deve atuar de maneira em que possa ser entesourada e/ou guardada como reserva de riqueza; e por fim permita ser utilizável como meio de conta, utilizável ao cálculo econômico em função da moeda.
+O autor menciona também as funções do dinheiro, listadas de servir como meio de troca, reserva de valor e unidade de conta. Em outras palavras, uma moeda deve servir, respectivamente, de maneira que as suas trocas sejam de forma facilitada; deve atuar de maneira em que possa ser entesourada e/ou guardada como reserva de riqueza; e por fim permita ser utilizável como meio de conta, utilizável ao cálculo econômico em função da moeda.
 
 Segundo Fernando, o \textit{Bitcoin} mostra-se capaz de performar as características e as funções da moeda tão bem, senão melhor, que o ouro e o papel-moeda. De acordo com ele, ``apesar da aparência unicamente digital, as atuais formas de dinheiro assemelham-se em muito ao \textit{Bitcoin}. A maior parte da massa monetária no mundo moderno manifesta-se de forma intangível; nosso dinheiro já é um bem incorpóreo, uma característica que em nada nos impede de usá-lo diariamente''\cite[p.95]{Ulrich2014}.
 
@@ -311,9 +332,9 @@ Segundo Fernando, o \textit{Bitcoin} mostra-se capaz de performar as caracterís
 %%%%%%%%%% DESENVOLVIMENTO %%%%%%%%%
 \section*{ESTUDO DA ARQUITETURA DE \textit{BLOCKCHAIN} UTILIZANDO RUST}
 
-Utilizamos de uma implementação experimental e educativa, que explica os princípios fundamentais da tecnologia \textit{blockchain} e explora os recursos da linguagem Rust que a tornam adequada para esse tipo de aplicação. Rust é amplamente reconhecida por seu gerenciamento de memória seguro e por evitar vulnerabilidades comuns a linguagens como C++ \cite{matsakis2014rust}, o que é crucial no desenvolvimento de sistemas descentralizados e imutáveis, como uma \textit{blockchain}.
+Foi utilizada de uma implementação experimental e educativa, que explica os princípios fundamentais da tecnologia \textit{blockchain} e explora os recursos da linguagem Rust que a tornam adequada para esse tipo de aplicação. Rust é amplamente reconhecida por seu gerenciamento de memória seguro e por evitar vulnerabilidades comuns a linguagens como C++ \cite{matsakis2014rust}, o que é crucial no desenvolvimento de sistemas descentralizados e imutáveis, como uma \textit{blockchain}. Por fim de teste, foi aplicado um comparativo da velocidade de processamento da linguagem \textit{Rust} com a linguagem \textit{Python3} e foi constatada uma diferença de performance do \textit{Rust} cinco vezes maior que do \textit{Python3}.
 
-Introdutoriamente utilizamos como base as seguintes fontes de conteúdo:
+Foi usado como base de conhecimento as seguintes fontes de conteúdo:
 \begin{itemize}
     \item \textbf{Documentação do \textit{Bitcoin}} \cite{nakamoto2008bitcoin}: Esta documentação foi utilizada por conta da orientação do projeto sob a arquitetura do \textit{Bitcoin}.
 
@@ -369,9 +390,9 @@ Seguimos também com as verificações que ocorrem na corrente durante a adiçã
 
 \end{itemize}
 
-\subsection*{Implementação da Hospedagem}
+\subsection*{Exibição da \textit{Blockchain} via Terminal e Navegador}
 
-Durante nosso estudo, implementamos o \textit{backend} da nossa aplicação de \textit{blockchain} utilizando a biblioteca Rust Actix Web. Neste sistema implementamos apenas apenas duas rotas, pois o objetivo deste \textit{backend} seria apenas visualizar em detalhes a formação da corrente e inserir novos blocos à sequência, sendo as rotas:
+Durante nosso estudo, foi adotado o \textit{backend} da aplicação de \textit{blockchain} utilizando a biblioteca Rust Actix Web. Neste sistema foi implementado apenas apenas duas rotas, pois o objetivo deste \textit{backend} seria apenas inserir novos blocos à sequência e exibir detalhadamente no navegador o estado dos blocos diante da corrente, sendo as rotas:
 
 \begin{itemize}
 \item \textbf{Rota GET \texttt{``/'':}} Esta rota é dedicada a exibição detalhada de dados dos blocos, ela coleta todos os blocos da corrente, os ordena e exibe os dados de Index, \textit{Hash}, \textit{Hash} do bloco anterior, quantidade de tentativas na mineração e as transações contida no bloco, com suas respectivas entradas e saídas de moedas;
@@ -380,12 +401,13 @@ Durante nosso estudo, implementamos o \textit{backend} da nossa aplicação de \
 \end{itemize}
 
 
-Consta aqui as imagens desta experimentação, o repositório \footnote{\href{https://github.com/HeberUnifil/Educational-Blockchain-Currency}{\textcolor{blue}{https://github.com/HeberUnifil/Educational-Blockchain-Currency}}} onde o código e os arquivos deste teste foram armazenados na plataforma Github por preferência dos autores.
+Consta em seguida as imagens desta experimentação, o repositório \footnote{\href{https://github.com/HeberUnifil/Educational-Blockchain-Currency}{\textcolor{blue}{https://github.com/HeberUnifil/Educational-Blockchain-Currency}}} onde o código e os arquivos deste teste foram armazenados na plataforma Github por preferência dos autores.
 
-Na Figura \ref*{fig:terminal} consta o registro via terminal Linux das atualizações realizadas na \textit{Blockchain}:
+Na Figura \ref*{fig:terminal} consta o registro via terminal Linux do histórico das atividades realizadas na \textit{Blockchain}:
 
-\begin{figure} [h]
+\begin{figure} [H]
 	\centering
+	\captionsetup{justification=centering}
 	\caption{Resposta via terminal sobre as atualizações na \textit{Blockchain}.}
 	\includegraphics[width=1\linewidth]{../images/terminal-blockchain.png}
 	\label{fig:terminal}
@@ -393,11 +415,12 @@ Na Figura \ref*{fig:terminal} consta o registro via terminal Linux das atualiza�
 
 \end{figure}
 
-Na Figura \ref*{fig:navegador} consta a exibição geral dos blocos ordenados na corrente, seus respectivos \textit{hashes}, sua marca temporal, quantidade de transações e o número de tentativas para mineração do bloco:
+Na Figura \ref*{fig:navegador} consta no navegador a exibição detalhada dos blocos ordenados na corrente, seus respectivos \textit{hashes}, sua marca temporal, quantidade de transações e o número de tentativas para mineração do bloco:
 
-\begin{figure} [h]
+\begin{figure} [H]
 	\centering
-	\caption{Resposta via terminal sobre as atualizações na \textit{Blockchain}.}
+	\captionsetup{justification=centering}
+	\caption{Resposta via navegador sobre o estado da \textit{Blockchain}.}
 	\includegraphics[width=1\linewidth]{../images/navegador-blockchain.png}
 	\label{fig:navegador}
 	\text{Fonte: Captura de tela tirada pelos autores}
@@ -413,19 +436,19 @@ Na Figura \ref*{fig:navegador} consta a exibição geral dos blocos ordenados na
 
 \section*{CONCLUSÃO}
 
-Neste projeto, percorremos por meio do contexto técnico e social do desenvolvimento dos criptoativos, averiguamos a motivação de desintermediação das atividades financeiras por meio da origem do \textit{Bitcoin}; exploramos o ecossistema cripto por meio dos contratos inteligentes e da \textit{DeFi}, e exibimos seu impacto diante da economia tradicional.
+Neste projeto, foi percorrido por meio do contexto técnico e social do desenvolvimento dos criptoativos, averiguado a motivação de desintermediação das atividades financeiras por meio da origem do \textit{Bitcoin}; explorado o ecossistema cripto por meio dos contratos inteligentes e da \textit{DeFi}, e é exibido seu impacto diante da economia tradicional.
 
-Apresentamos os conceitos chave do funcionamento do \textit{Bitcoin}, constatamos a estrutura dos blocos, a estrutura do encadeamento, o procedimento de prova de trabalho utilizado na mineração do \textit{Bitcoin} e como constitui o seu caráter criptográfico. Vimos também como a natureza do \textit{Bitcoin}, de maneira programática, corrobora aos conceitos técnico-econômicos da Escola Austríaca de Economia, provendo respaldo diante das características do dinheiro, tão bem como as funções da moeda. Apresentamos o resultado da comparação de suas características ao papel-moeda e ao ouros por Fernando Ulrich.
+Foi apresentado os conceitos chave do funcionamento do \textit{Bitcoin}, constatado a estrutura dos blocos, a estrutura do encadeamento, o procedimento de prova de trabalho utilizado na mineração do \textit{Bitcoin} e como constitui o seu caráter criptográfico. Foi visto também como a natureza do \textit{Bitcoin}, de maneira programática, aplica os conceitos técnico-econômicos da Escola Austríaca de Economia, provendo respaldo diante das características do dinheiro, tão bem como as funções da moeda. Foi apresentado o resultado da comparação de suas características ao papel-moeda e ao ouros por Fernando Ulrich.
 
-Por fim, atuamos na experimentação educacional da implementação de um sistema de \textit{blockchain}, que abstrai os conceitos base do \textit{Bitcoin}, permite a sua manipulação via requisições e exibe as classes presentes da corrente no navegador. Foram expostas todas as estruturas geradas neste experimento, seus atributos e suas funções diante da rede.
+Por fim, foi atuado na experimentação educacional da implementação de um sistema de \textit{blockchain}, que abstrai os conceitos base do \textit{Bitcoin}, permite a sua manipulação via requisições e exibe as classes presentes da corrente no navegador. Foram expostas todas as estruturas geradas neste experimento, seus atributos e suas funções diante da rede.
 
 \subsection*{Trabalhos Futuros}
 
 Este projeto de \textit{blockchain}, concebido com foco educacional e exploratório tanto da linguagem de programação Rust quanto da arquitetura de \textit{blockchains}, abriu diversas possibilidades para melhorias e novas direções de desenvolvimento. Destacamos áreas de pesquisa e aprimoramento que poderão expandir as funcionalidades e aplicações práticas dessa arquitetura:
 
-\textbf{Aprimoramento do algoritmo de \textit{Hashes} - }Devido ao viés educativo utilizamos de algoritmos de geração de \textit{Hashes} simplistas. Utilizando poucos atributos das classes em questão resulta a criação de \textit{Hashes} pouco complexos, o que impacta diretamente na flexibilidade da aplicação. Sendo assim abrindo margem para o retrabalho e aprimoramento do mesmo.
+\textbf{Aprimoramento do algoritmo de \textit{Hashes} - }Devido ao viés educativo foi utilizado de algoritmos de geração de \textit{Hashes} simplistas. Utilizando poucos atributos das classes em questão resulta a criação de \textit{Hashes} pouco complexos, o que impacta diretamente na flexibilidade da aplicação. Sendo assim abrindo margem para o retrabalho e aprimoramento do mesmo.
 
-\textbf{Otimização e Aprimoramento do Código Rust - }Por conta do caráter exploratório do projeto diante da linguagem de baixo nível, temos uma vasta gama de oportunidade para otimização e correções ao código escrito no nosso projeto. Dada a progressão da maturidade dos autores na linguagem, é esperada a constante manipulação da documentação do código e aprimoramento das estruturas apresentadas previamente. Este projeto exibe a visão de adequação para maior profundidade e semelhança ao algoritmo do \textit{Bitcoin}, de acordo com a especialização dos autores no que se diz respeito a conhecimentos de criptografia, escalabilidade e segurança da informação.
+\textbf{Otimização e Aprimoramento do Código Rust - }Por conta do caráter exploratório do projeto diante da linguagem de baixo nível, há uma vasta gama de oportunidade para otimização e correções ao código escrito no nosso projeto. Dada a progressão da maturidade dos autores na linguagem, é esperada a constante manipulação da documentação do código e aprimoramento das estruturas apresentadas previamente. Este projeto exibe a visão de adequação para maior profundidade e semelhança ao algoritmo do \textit{Bitcoin}, de acordo com a especialização dos autores no que se diz respeito a conhecimentos de criptografia, escalabilidade e segurança da informação.
 
 \textbf{Implementação de um Sistema de Assinatura Criptográfica - }Conforme a estrutura da \textit{blockchain} adquire maior robustez, é visível a abertura do acesso à rede a partir de assinaturas de chave privada e pública, permitindo que seus usuários crie e assine suas transações. 
 
@@ -438,7 +461,7 @@ Este projeto de \textit{blockchain}, concebido com foco educacional e explorató
 \subsection*{Considerações Finais}
 Esses trabalhos futuros apresentam um roteiro para a evolução desta arquitetura de blockchain em Rust. O desenvolvimento dessas novas funcionalidades e a pesquisa contínua na área contribuirão para o avanço de novos projetos, permitindo que ultrapassem o ambiente acadêmico e ofereçam soluções inovadoras para desafios do mundo digital. Dessa forma, o projeto não apenas se tornará uma ferramenta educacional sólida para o estudo de economia no contexto da Web 3.0 e das finanças descentralizadas.
 
-Particularmente, eu gostaria de prestar meus agradecimentos ao Professor Marc Antonio Vieira de Queiroz e ao Professor Orientador Mario Henrique Akihiko da Costa Adaniya pela sugestão de conteúdo, suporte e orientação pelo decorrer deste projeto. Dedico este trabalho à minha noiva Lauren e ao leal Grupp.\\ \textbf{Liberdade é um dever}.
+Particularmente, eu gostaria de prestar meus agradecimentos ao Professor Marc Antonio Vieira de Queiroz e ao Professor Orientador Mario Henrique Akihiko da Costa Adaniya pela sugestão de conteúdo, suporte e orientação pelo decorrer deste projeto.\\ Dedico este trabalho à minha noiva Lauren e ao leal GRUPP.\\ \textbf{Liberdade é um dever}.
 
 % \end{figure}
 

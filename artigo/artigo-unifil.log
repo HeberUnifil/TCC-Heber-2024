@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.10.5)  29 OCT 2024 23:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.10.5)  13 NOV 2024 15:38
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1150,6 +1150,13 @@ File: pgfcalendar.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \gtt@calendar@startofweek=\count448
 \gtt@left@slot=\count449
 \gtt@right@slot=\count450
+) (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count451
+\float@exts=\toks61
+\float@box=\box85
+\@float@everytoks=\toks62
+\@floatcapt=\box86
 )
    defining Unicode char U+00A0 (decimal 160)
  (/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
@@ -1168,11 +1175,12 @@ Package caption Info: memoir document class detected.
  (/usr/share/texlive/texmf-dist/tex/latex/caption/caption-memoir.sto
 File: caption-memoir.sto 2023/09/08 v2.2c Adaption of the caption package to the memoir document class (AR)
 ))
-\c@caption@flags=\count451
-\c@continuedfloat=\count452
+\c@caption@flags=\count452
+\c@continuedfloat=\count453
 Package caption Info: changepage package is loaded.
 \caption@adjustwidth@hsize=\dimen350
 \caption@adjustwidth@linewidth=\dimen351
+Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: longtable package is loaded.
@@ -1182,52 +1190,52 @@ Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
 Package caption Info: supertabular package is loaded.
 ) (/usr/share/texlive/texmf-dist/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2023/10/27 v2.16 Sectioning titles
-\ttl@box=\box85
+\ttl@box=\box87
 \beforetitleunit=\skip280
 \aftertitleunit=\skip281
 \ttl@plus=\dimen352
 \ttl@minus=\dimen353
-\ttl@toksa=\toks61
+\ttl@toksa=\toks63
 \titlewidth=\dimen354
 \titlewidthlast=\dimen355
 \titlewidthfirst=\dimen356
 ) (./artigo-unifil.aux)
 \openout1 = `artigo-unifil.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-Package hyperref Info: Link coloring ON on input line 48.
-\myptabbox=\box86
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+Package hyperref Info: Link coloring ON on input line 49.
+\myptabbox=\box88
 \myptabboxwidth=\skip282
  (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count453
+\scratchcounter=\count454
 \scratchdimen=\dimen357
-\scratchbox=\box87
-\nofMPsegments=\count454
-\nofMParguments=\count455
-\everyMPshowfont=\toks62
-\MPscratchCnt=\count456
+\scratchbox=\box89
+\nofMPsegments=\count455
+\nofMParguments=\count456
+\everyMPshowfont=\toks64
+\MPscratchCnt=\count457
 \MPscratchDim=\dimen358
-\MPnumerator=\count457
-\makeMPintoPDFobject=\count458
-\everyMPtoPDFconversion=\toks63
+\MPnumerator=\count458
+\makeMPintoPDFobject=\count459
+\everyMPtoPDFconversion=\toks65
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -1268,7 +1276,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\c@lstlisting=\count459
+\c@lstlisting=\count460
 (/usr/share/texlive/texmf-dist/tex/latex/translator/translator-months-dictionary-English.dict
 Dictionary: translator-months-dictionary, Language: English 
 ) (/usr/share/texlive/texmf-dist/tex/latex/translator/translator-months-dictionary-Portuguese.dict
@@ -1277,112 +1285,109 @@ Dictionary: translator-month-dictionary, Language: portuguese
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 55.
-LaTeX Font Info:    Font shape `T1/phv/m/it' in size <12> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 81.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 56.
  [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}] [2] [3]
-Overfull \hbox (3.03114pt too wide) in paragraph at lines 133--134
-[]\T1/phv/m/n/12 O es-tudo dos crip-to-a-ti-vos, fre-quen-te-mente re-fe-ri-dos como crip-to-mo-e-das, emer-
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}]
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <12> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 86.
+ [2] [3]
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <14.4> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 139.
+ [4] [5] [6]
+Overfull \hbox (7.09879pt too wide) in paragraph at lines 180--181
+[]\T1/phv/m/n/12 Este pro-jeto uti-li-zou dos au-to-res da Es-cola Aus-tríaca de Eco-no-mia Böm Bawerk,
  []
 
-[4]
-LaTeX Font Info:    Font shape `T1/phv/m/it' in size <14.4> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 135.
- [5] [6]
-LaTeX Font Info:    Font shape `T1/phv/b/it' in size <12> not available
-(Font)              Font shape `T1/phv/b/sl' tried instead on input line 163.
- [7] [8]
-<../images/figura 2.png, id=98, 616.704pt x 227.6505pt>
+<../images/figura 2.png, id=77, 1072.005pt x 359.84438pt>
 File: ../images/figura 2.png Graphic file (type png)
 <use ../images/figura 2.png>
-Package pdftex.def Info: ../images/figura 2.png  used on input line 192.
-(pdftex.def)             Requested size: 364.00139pt x 134.3682pt.
+Package pdftex.def Info: ../images/figura 2.png  used on input line 196.
+(pdftex.def)             Requested size: 364.00139pt x 122.18074pt.
 
-Overfull \hbox (43.15009pt too wide) in paragraph at lines 192--195
+Overfull \hbox (43.15009pt too wide) in paragraph at lines 196--199
  [] 
  []
 
-<../images/figura 1.png, id=101, 781.11826pt x 374.5995pt>
+[7]
+<../images/figura 1.png, id=86, 781.11826pt x 374.5995pt>
 File: ../images/figura 1.png Graphic file (type png)
 <use ../images/figura 1.png>
-Package pdftex.def Info: ../images/figura 1.png  used on input line 202.
+Package pdftex.def Info: ../images/figura 1.png  used on input line 208.
 (pdftex.def)             Requested size: 364.00139pt x 174.56421pt.
 
-Overfull \hbox (43.15009pt too wide) in paragraph at lines 202--205
+Overfull \hbox (43.15009pt too wide) in paragraph at lines 208--211
  [][] 
  []
 
-[9 <../images/figura 2.png (PNG copy)> <../images/figura 1.png (PNG copy)>] [10] [11] [12]
-Overfull \hbox (1.13617pt too wide) in paragraph at lines 259--260
-[]\T1/phv/b/n/12 Economia e a Ação Hu-mana \T1/phv/m/n/12 - Ludwig von Mi-ses, em "Ação Hu-mana"([][]MISES[][],
+[8 <../images/figura 2.png> <../images/figura 1.png (PNG copy)>]
+<../images/figura 3.png, id=96, 660.21657pt x 268.75406pt>
+File: ../images/figura 3.png Graphic file (type png)
+<use ../images/figura 3.png>
+Package pdftex.def Info: ../images/figura 3.png  used on input line 220.
+(pdftex.def)             Requested size: 364.00139pt x 148.17606pt.
+
+Overfull \hbox (43.15009pt too wide) in paragraph at lines 220--223
+ [][] 
  []
 
-[13]
+LaTeX Font Info:    Font shape `T1/phv/b/it' in size <12> not available
+(Font)              Font shape `T1/phv/b/sl' tried instead on input line 226.
+[9 <../images/figura 3.png>]
 LaTeX Font Info:    Font shape `T1/phv/b/it' in size <14> not available
-(Font)              Font shape `T1/phv/b/sl' tried instead on input line 269.
-
-Overfull \hbox (2.61511pt too wide) in paragraph at lines 274--275
-\T1/phv/m/n/12 qui-dez frente a ou-tros bens mo-ne-tá-rios e de seus pos-sí-veis usos al-ter-na-ti-vos"([][]ULRICH[][],
- []
-
-[14]
-LaTeX Font Info:    Trying to load font information for TS1+phv on input line 318.
+(Font)              Font shape `T1/phv/b/sl' tried instead on input line 281.
+ [10]
+LaTeX Font Info:    Trying to load font information for TS1+phv on input line 291.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1phv.fd
 File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
-) [15] [16]
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 362.
+) [11] [12] [13]
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 383.
  (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
-) [17{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}]
+) [14{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}]
 LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <12> not available
-(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 377.
-<../images/terminal-blockchain.png, id=221, 882.29625pt x 208.52907pt>
+(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 398.
+<../images/terminal-blockchain.png, id=166, 882.29625pt x 208.52907pt>
 File: ../images/terminal-blockchain.png Graphic file (type png)
 <use ../images/terminal-blockchain.png>
-Package pdftex.def Info: ../images/terminal-blockchain.png  used on input line 390.
+Package pdftex.def Info: ../images/terminal-blockchain.png  used on input line 412.
 (pdftex.def)             Requested size: 455.0pt x 107.53844pt.
-<../images/navegador-blockchain.png, id=222, 665.48625pt x 740.7675pt>
+<../images/navegador-blockchain.png, id=167, 665.48625pt x 740.7675pt>
 File: ../images/navegador-blockchain.png Graphic file (type png)
 <use ../images/navegador-blockchain.png>
-Package pdftex.def Info: ../images/navegador-blockchain.png  used on input line 401.
+Package pdftex.def Info: ../images/navegador-blockchain.png  used on input line 424.
 (pdftex.def)             Requested size: 455.0pt x 506.4732pt.
+ [15 <../images/terminal-blockchain.png (PNG copy)>] [16 <../images/navegador-blockchain.png>] [17
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[18 <../images/terminal-blockchain.png (PNG copy)>] [19 <../images/navegador-blockchain.png>] [20
-
-] [21] (./artigo-unifil.bbl (./artigo-unifil.brf)
+] [18] (./artigo-unifil.bbl (./artigo-unifil.brf)
 \tf@brf=\write5
 \openout5 = `artigo-unifil.brf'.
 
- [22]
+ [19]
 bibitemlist
-[23
+[20
 
-]) [24] (./artigo-unifil.aux)
+]) [21] (./artigo-unifil.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2020/03/25>
  ***********
 Package rerunfilecheck Info: File `artigo-unifil.brf' has not changed.
-(rerunfilecheck)             Checksum: A98308B3EF2AC41C6330356C91677B69;2838.
+(rerunfilecheck)             Checksum: EE52872DCFB5889F0091CF117D804238;1721.
  ) 
 Here is how much of TeX's memory you used:
- 39448 strings out of 474222
- 736127 string characters out of 5748733
- 1942975 words of memory out of 5000000
- 60981 multiletter control sequences out of 15000+600000
+ 39426 strings out of 474222
+ 735400 string characters out of 5748733
+ 1941975 words of memory out of 5000000
+ 60966 multiletter control sequences out of 15000+600000
  607940 words of font info for 88 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  114i,16n,121p,2382b,685s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf/fonts/type1/public/cm-super/sftt1200.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvbo8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on artigo-unifil.pdf (24 pages, 467166 bytes).
+Output written on artigo-unifil.pdf (21 pages, 504701 bytes).
 PDF statistics:
- 365 PDF objects out of 1000 (max. 8388607)
- 320 compressed objects within 4 object streams
- 63 named destinations out of 1000 (max. 500000)
- 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 295 PDF objects out of 1000 (max. 8388607)
+ 251 compressed objects within 3 object streams
+ 52 named destinations out of 1000 (max. 500000)
+ 46 words of extra memory for PDF output out of 10000 (max. 10000000)
 
